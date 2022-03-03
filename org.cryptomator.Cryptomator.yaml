@@ -88,15 +88,18 @@ modules:
       - ln -s /app/Cryptomator/bin/Cryptomator /app/bin/cryptomator
       - install -D -m0644 -t /app/share/applications/ org.cryptomator.Cryptomator.desktop
       - install -D -m0644 -t /app/share/icons/hicolor/scalable/apps/ org.cryptomator.Cryptomator.svg
-      - install -D -m0644 -t /app/share/metainfo/ org.cryptomator.Cryptomator.appdata.xml
+      - install -D -m0644 -t /app/share/metainfo/ org.cryptomator.Cryptomator.metainfo.xml
     sources:
       - maven-dependencies.yaml
       - type: file
-        path: org.cryptomator.Cryptomator.appdata.xml
+        sha256: b454529a92d7785065a9269b4bdd4ef47fd1605fa67f32087efea808c34e2fde
+        url: https://raw.githubusercontent.com/cryptomator/cryptomator/develop/dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
       - type: file
-        path: org.cryptomator.Cryptomator.desktop
+        sha256: e78538ca595e2ae4dcbf81b82aa96b2fd08c7f6f01be01c556f980159f4da46d
+        url: https://raw.githubusercontent.com/cryptomator/cryptomator/develop/dist/linux/common/org.cryptomator.Cryptomator.desktop
       - type: file
-        path: org.cryptomator.Cryptomator.svg
+        sha256: ef1fb99d6d2a4d48b5ac9f4bbc09f2129a38c9bbf1658566aa7d4972fb83e83e
+        url: https://raw.githubusercontent.com/cryptomator/cryptomator/develop/dist/linux/common/org.cryptomator.Cryptomator.svg
       - type: archive
         sha256: 1e5fb91f9f61cd63f9319b0d0adc7b5d04685679b6614306c9c11fe4384b8742
         url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.5.tar.gz
