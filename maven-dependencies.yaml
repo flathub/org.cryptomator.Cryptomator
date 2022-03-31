@@ -59,21 +59,13 @@
   url: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
   sha1: 8c8ad6a96a8c1168f8b12ec8a227b8261b160b26
 - type: file
-  dest: .m2/repository/com/auth0/java-jwt/3.18.1
-  url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.18.1/java-jwt-3.18.1.pom
-  sha1: c382400ebdf2f9fbcc0b1f85f8867c10b1677203
+  dest: .m2/repository/com/auth0/java-jwt/3.19.1
+  url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.19.1/java-jwt-3.19.1.jar
+  sha1: c69533f63113657ca0262f0f729cf26b8ddd38bc
 - type: file
-  dest: .m2/repository/com/auth0/java-jwt/3.19.0
-  url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.19.0/java-jwt-3.19.0.jar
-  sha1: b2f3b69b71087aa1f713453c778c90b7b8b0d079
-- type: file
-  dest: .m2/repository/com/auth0/java-jwt/3.19.0
-  url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.19.0/java-jwt-3.19.0.pom
-  sha1: a9e1d9b897c7a19880820a8d97a91e0adfdd53f1
-- type: file
-  dest: .m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.pom
-  sha1: 516a81f560864d215c7680f5a00484ddfa8794b5
+  dest: .m2/repository/com/auth0/java-jwt/3.19.1
+  url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.19.1/java-jwt-3.19.1.pom
+  sha1: e5c12930e049ea2132732d48365bfd72aa11092c
 - type: file
   dest: .m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar
@@ -83,10 +75,6 @@
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.pom
   sha1: 4777fb9704d7933684b717b9cef3975d109de0b7
 - type: file
-  dest: .m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.pom
-  sha1: e996f8033f774ea6d197de0edc84d6f14c2ce57e
-- type: file
   dest: .m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar
   sha1: 0a6a0e0620d51833feffc67bccb51937b2345763
@@ -95,45 +83,25 @@
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.pom
   sha1: a899bde135264d4fd67ed30c1e3fb1dc85054d8f
 - type: file
-  dest: .m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.pom
-  sha1: fffc69b81151915509b96cbc7e80ad832b53301d
+  dest: .m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2
+  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar
+  sha1: ffeb635597d093509f33e1e94274d14be610f933
 - type: file
-  dest: .m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.2/jackson-databind-2.13.2.jar
-  sha1: 926e48c451166a291f1ce6c6276d9abbefa7c00f
-- type: file
-  dest: .m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.2/jackson-databind-2.13.2.pom
-  sha1: 0bcebc7ff1352d8ccf23b6ddb0c0c5387413fe86
-- type: file
-  dest: .m2/repository/com/fasterxml/jackson/jackson-base/2.11.0
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.11.0/jackson-base-2.11.0.pom
-  sha1: 276bbf4e8376ae502fbb778f457ab8c827905735
+  dest: .m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2
+  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.pom
+  sha1: 43dda6b6dc13ad42a923b30f646ae6360710b51f
 - type: file
   dest: .m2/repository/com/fasterxml/jackson/jackson-base/2.13.2
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.13.2/jackson-base-2.13.2.pom
   sha1: 2f0165ddb7321c116857b234fadc2f965febab2f
 - type: file
-  dest: .m2/repository/com/fasterxml/jackson/jackson-bom/2.11.0
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.11.0/jackson-bom-2.11.0.pom
-  sha1: 33494ae4ec70fa17a153f42f367b36303cff71ff
-- type: file
   dest: .m2/repository/com/fasterxml/jackson/jackson-bom/2.13.2
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.13.2/jackson-bom-2.13.2.pom
   sha1: 666455372ac024fec03363666094acb272302183
 - type: file
-  dest: .m2/repository/com/fasterxml/jackson/jackson-parent/2.11
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.11/jackson-parent-2.11.pom
-  sha1: 89f0f8a7f21a54125e0ae1f72e6cdd50b51c87f3
-- type: file
   dest: .m2/repository/com/fasterxml/jackson/jackson-parent/2.13
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.13/jackson-parent-2.13.pom
   sha1: f6a50c4f6c369a82cc6f38363410d6f3c03aaf7c
-- type: file
-  dest: .m2/repository/com/fasterxml/oss-parent/38
-  url: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/38/oss-parent-38.pom
-  sha1: ff6b9e9e40c23235f87a44b463995b47adca8dc9
 - type: file
   dest: .m2/repository/com/fasterxml/oss-parent/43
   url: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/43/oss-parent-43.pom
@@ -290,10 +258,6 @@
   dest: .m2/repository/com/google/collections/google-collections/1.0
   url: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom
   sha1: 292197f3cb1ebc0dd03e20897e4250b265177286
-- type: file
-  dest: .m2/repository/com/google/dagger/dagger/2.37
-  url: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.37/dagger-2.37.pom
-  sha1: 6dde5fec7c98b28c7cd88fc1e3863679b7e740e2
 - type: file
   dest: .m2/repository/com/google/dagger/dagger/2.39.1
   url: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.39.1/dagger-2.39.1.pom
@@ -2531,13 +2495,13 @@
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.pom
   sha1: ed912aed85e5225ef3dda9a9cd2acaa0a08c643b
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.3.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.3.1/cryptofs-2.3.1.jar
-  sha1: b64d7edd330053d1ef2030fb036ccf2be400ce5c
+  dest: .m2/repository/org/cryptomator/cryptofs/2.4.0
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.4.0/cryptofs-2.4.0.jar
+  sha1: 5a379a68009da7179fb90edecae3e7325b93e578
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.3.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.3.1/cryptofs-2.3.1.pom
-  sha1: 16e3ca05dec2560e5f4c08e51a055273767f1a77
+  dest: .m2/repository/org/cryptomator/cryptofs/2.4.0
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.4.0/cryptofs-2.4.0.pom
+  sha1: 8a20d7fbc4982fcc16e96e8e1f4899a365686fca
 - type: file
   dest: .m2/repository/org/cryptomator/cryptolib/2.0.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.0.3/cryptolib-2.0.3.jar
