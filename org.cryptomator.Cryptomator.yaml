@@ -46,7 +46,7 @@ modules:
         PATH: /app/bin:/usr/bin:/usr/lib/sdk/openjdk17/bin
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: /usr/lib/sdk/openjdk17/jvm/openjdk-17
-        VERSION: 1.6.10
+        VERSION: 1.6.11
         REVISION_NO: '1'
     build-commands:
       - mvn clean package -DskipTests -Plinux
@@ -92,5 +92,5 @@ modules:
     sources:
       - maven-dependencies.yaml
       - type: archive
-        sha256: e5434ed195a89f072663a5fa5b8a245a3b24c8f114a58882d40f96134820686c
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.10.tar.gz
+        sha256: 49e42e6396d06d3a11eda3870375303849f6d52f049cb7528f59c3375e82baea
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.11.tar.gz
