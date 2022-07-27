@@ -46,7 +46,7 @@ modules:
         PATH: /app/bin:/usr/bin:/usr/lib/sdk/openjdk17/bin
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: /usr/lib/sdk/openjdk17/jvm/openjdk-17
-        VERSION: 1.6.11
+        VERSION: 1.6.12
         REVISION_NO: '1'
     build-commands:
       - mvn clean package -DskipTests -Plinux
@@ -76,6 +76,7 @@ modules:
         --java-options '-Dfile.encoding='utf-8''
         --java-options '-Dcryptomator.logDir='~/.local/share/Cryptomator/logs''
         --java-options '-Dcryptomator.settingsPath='~/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
+        --java-options '-Dcryptomator.p12Path='~/.config/Cryptomator/key.p12''
         --java-options '-Dcryptomator.ipcSocketPath='~/.config/Cryptomator/ipc.socket''
         --java-options '-Dcryptomator.mountPointsDir='~/.local/share/Cryptomator/mnt''
         --java-options '-Dcryptomator.pluginDir='~/.local/share/Cryptomator/plugins''
@@ -92,5 +93,5 @@ modules:
     sources:
       - maven-dependencies.yaml
       - type: archive
-        sha256: 49e42e6396d06d3a11eda3870375303849f6d52f049cb7528f59c3375e82baea
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.11.tar.gz
+        sha256: 42d516a23300fa6fe383bf53bba26971d4fce3f4cd53b80df33fc25c81e3553a
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.12.tar.gz
