@@ -97,4 +97,4 @@ modules:
         url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.15.tar.gz
       - type: file
         sha256: e03d10203356963eed62ab6e78515a6eba920c3d23f630813832eb7ffbe9bf03
-        url: https://raw.githubusercontent.com/cryptomator/cryptomator/develop/dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
+        url: https://github.com/cryptomator/cryptomator/blob/26ecd67a791463a7a45491f48ed184af5b7979a5/dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
