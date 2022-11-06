@@ -11,6 +11,7 @@ finish-args:
   - --env=PATH=/app/bin/:/app/jre/bin/:/usr/bin/
   - --filesystem=home
   - --filesystem=xdg-run/org.keepassxc.KeePassXC.BrowserServer
+  - --filesystem=xdg-run/app/org.keepassxc.KeePassXC/
   - --share=ipc
   - --share=network
   - --socket=x11
