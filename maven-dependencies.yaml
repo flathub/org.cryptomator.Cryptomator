@@ -2500,12 +2500,16 @@
   sha1: 8093215a6c2818430ca05700ed5674b07f97a270
 - type: file
   dest: .m2/repository/org/cryptomator/cryptolib/2.1.0
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.0/cryptolib-2.1.0.jar
-  sha1: d612d3192f084493aeb126371287a27fe73b6588
-- type: file
-  dest: .m2/repository/org/cryptomator/cryptolib/2.1.0
   url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.0/cryptolib-2.1.0.pom
   sha1: 99c87e74dd40b025d51877ca3f334111292dec01
+- type: file
+  dest: .m2/repository/org/cryptomator/cryptolib/2.1.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.1/cryptolib-2.1.1.jar
+  sha1: b9d9162ad289dbd6dd4dfa5bff659dac334ff5c9
+- type: file
+  dest: .m2/repository/org/cryptomator/cryptolib/2.1.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.1/cryptolib-2.1.1.pom
+  sha1: 6d5580088a76c3c738072680663f6a80c7a68ade
 - type: file
   dest: .m2/repository/org/cryptomator/dokany-nio-adapter/1.3.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/dokany-nio-adapter/1.3.3/dokany-nio-adapter-1.3.3.jar

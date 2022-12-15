@@ -42,7 +42,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.6.16
+        VERSION: 1.6.17
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -97,8 +97,8 @@ modules:
     sources:
       - maven-dependencies.yaml
       - type: archive
-        sha512: 131f7f5da7a3b9252d999110c14afc358a517d53133f91866a6d3786a9e9fed51b34079bc865543c75b8d0df6352488a179ec68374b3ee5ebfa5aa825851ff29
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.16.tar.gz
+        sha512: b2fbe2247969ced3061eb5fba0cd6e777d69d6b9637c2b069810b98064f97940e315b41085c623a8aca880c3860776b9a8109768e70e61967ba05f25b674a528
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.17.tar.gz
       - type: file
         only-arches:
           - x86_64
