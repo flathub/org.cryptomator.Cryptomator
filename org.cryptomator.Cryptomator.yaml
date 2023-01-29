@@ -24,16 +24,32 @@ cleanup:
   - /lib/pkgconfig
 modules:
   - name: libfuse
+    buildsystem: meson
     config-opts:
-      - MOUNT_FUSE_PATH=/app/bin
-    post-install:
-      - install fusermount-wrapper.sh /app/bin/fusermount
+      - -Dexamples=false
+      - -Duseroot=false
+      - -Dtests=false
+      # don't install rules on the host
+      - -Dudevrulesdir=/tmp/
     sources:
       - type: archive
         url: https://github.com/libfuse/libfuse/releases/download/fuse-3.13.0/fuse-3.13.0.tar.xz
         sha256: 1e54d3ee1d7d04f41e77617c4f7514f611b94332215dd88394bd82803032752a
+        x-checker-data:
+          type: anitya
+          project-id: 861
+          url-template: https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.xz
+          versions: {<: '4.0'}
+  - name: host-command-wrapper
+    buildsystem: simple
+    build-commands:
+      - install fusermount-wrapper.sh /app/bin/fusermount
+      - install umount-wrapper.sh /app/bin/umount
+    sources:
       - type: file
         path: build-aux/fusermount-wrapper.sh
+      - type: file
+        path: build-aux/umount-wrapper.sh
   - name: cryptomator
     buildsystem: simple
     build-options:
