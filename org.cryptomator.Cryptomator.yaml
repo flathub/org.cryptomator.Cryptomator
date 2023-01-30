@@ -44,12 +44,9 @@ modules:
     buildsystem: simple
     build-commands:
       - install fusermount-wrapper.sh /app/bin/fusermount
-      - install umount-wrapper.sh /app/bin/umount
     sources:
       - type: file
         path: build-aux/fusermount-wrapper.sh
-      - type: file
-        path: build-aux/umount-wrapper.sh
   - name: cryptomator
     buildsystem: simple
     build-options:
