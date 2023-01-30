@@ -109,8 +109,8 @@ modules:
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
     sources:
       - maven-dependencies.yaml
-      - type: archive
-        sha512: b2fbe2247969ced3061eb5fba0cd6e777d69d6b9637c2b069810b98064f97940e315b41085c623a8aca880c3860776b9a8109768e70e61967ba05f25b674a528
+      - type: archive #TODO: adjust once 1.7.0 is released
+        sha512: dba7708ba9444360dcc7d2bafa651c2bb7a280e0f36c2b86c54fc697d992ffd4bac17c7cf8e422e26ad77c4463e66c51cf5e5178e68cc717565a087cbaeefec4 
         url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.6.17.tar.gz
       - type: file
         only-arches:
