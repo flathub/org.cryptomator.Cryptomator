@@ -25,6 +25,6 @@
 - type: file
   dest: .m2/repository/org/openjfx/javafx-swing/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19/javafx-swing-19-linux-aarch64.jar
-  sha1: 253eceb129b4afc539d3aaf676dcd53ba3795f7e
+  sha1: cdfbd25be53a99582595f85ff5b337f67bb18c16
   only-arches:
     - aarch64
