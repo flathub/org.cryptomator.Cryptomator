@@ -2963,6 +2963,10 @@
   url: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/3.2/objenesis-parent-3.2.pom
   sha1: 833ced74e7fd53408a3915080c5e50f2dc90dc35
 - type: file
+  dest: .m2/repository/org/openjfx/javafx/14
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx/14/javafx-14.pom
+  sha1: 731669952fbae02b5b084cdfe38c40d716cd79f7
+- type: file
   dest: .m2/repository/org/openjfx/javafx/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx/19/javafx-19.pom
   sha1: d40d559d9b46a0bfc34fbaec379b2e0a753d275e
