@@ -2963,10 +2963,6 @@
   url: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/3.2/objenesis-parent-3.2.pom
   sha1: 833ced74e7fd53408a3915080c5e50f2dc90dc35
 - type: file
-  dest: .m2/repository/org/openjfx/javafx/14
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx/14/javafx-14.pom
-  sha1: 731669952fbae02b5b084cdfe38c40d716cd79f7
-- type: file
   dest: .m2/repository/org/openjfx/javafx/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx/19/javafx-19.pom
   sha1: d40d559d9b46a0bfc34fbaec379b2e0a753d275e
@@ -2983,10 +2979,6 @@
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/19/javafx-base-19.pom
   sha1: e96dbf22895994738bb7afd004063c1855dadf50
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-base/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/19/javafx-base-19-linux.jar
-  sha1: d988ef83bf686547a265d28ec2b2b4af2aa4cee1
-- type: file
   dest: .m2/repository/org/openjfx/javafx-controls/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/19/javafx-controls-19.jar
   sha1: 9f8d4f41bff27d8ac956b21e5223eaaebb7d9413
@@ -2994,10 +2986,6 @@
   dest: .m2/repository/org/openjfx/javafx-controls/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/19/javafx-controls-19.pom
   sha1: 4d38a26c65e31f946903116e628504cd72c6ee9f
-- type: file
-  dest: .m2/repository/org/openjfx/javafx-controls/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/19/javafx-controls-19-linux.jar
-  sha1: 6b23ba4762a511afa99a85e6aac1fc6de803d19d
 - type: file
   dest: .m2/repository/org/openjfx/javafx-fxml/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/19/javafx-fxml-19.jar
@@ -3007,10 +2995,6 @@
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/19/javafx-fxml-19.pom
   sha1: cd175f2fa553aaa8219f6ae0268c50e49c4c2e80
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-fxml/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/19/javafx-fxml-19-linux.jar
-  sha1: c579fb66fea6b027dc1960051ff0895ce469f0f0
-- type: file
   dest: .m2/repository/org/openjfx/javafx-graphics/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/19/javafx-graphics-19.jar
   sha1: 44dbcee46b9e902629bb4e0f409b3d6e10ac8e8b
@@ -3019,10 +3003,6 @@
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/19/javafx-graphics-19.pom
   sha1: 1231694c10d8acc5adce1fb4dc74a1df1b1ac3bb
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-graphics/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/19/javafx-graphics-19-linux.jar
-  sha1: df76254a104329796414ae619ec0b4e1f9616452
-- type: file
   dest: .m2/repository/org/openjfx/javafx-swing/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19/javafx-swing-19.jar
   sha1: 8d7fce10ec43605daa30bf8074b135e039b672e0
@@ -3030,10 +3010,6 @@
   dest: .m2/repository/org/openjfx/javafx-swing/19
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19/javafx-swing-19.pom
   sha1: aa597b2a81f67a266cb3998d8cbbe79bbbb0b751
-- type: file
-  dest: .m2/repository/org/openjfx/javafx-swing/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19/javafx-swing-19-linux.jar
-  sha1: 253eceb129b4afc539d3aaf676dcd53ba3795f7e
 - type: file
   dest: .m2/repository/org/opentest4j/opentest4j/1.2.0
   url: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
