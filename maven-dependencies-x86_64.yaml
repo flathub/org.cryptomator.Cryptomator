@@ -1,30 +1,30 @@
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-base/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/19/javafx-base-19-linux.jar
-  sha1: d988ef83bf686547a265d28ec2b2b4af2aa4cee1
+  dest: .m2/repository/org/openjfx/javafx-base/19.0.2.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1-linux.jar
+  sha1: 9e4ca5ce2b87c479d2cc445ff411a48aeae76936
   only-arches:
     - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-controls/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/19/javafx-controls-19-linux.jar
-  sha1: 6b23ba4762a511afa99a85e6aac1fc6de803d19d
+  dest: .m2/repository/org/openjfx/javafx-controls/19.0.2.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1-linux.jar
+  sha1: b5b2a8ead40bd43476740aa51697bb1cac23de5c
   only-arches:
     - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-fxml/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/19/javafx-fxml-19-linux.jar
-  sha1: c579fb66fea6b027dc1960051ff0895ce469f0f0
+  dest: .m2/repository/org/openjfx/javafx-fxml/19.0.2.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1-linux.jar
+  sha1: c06ba44d4f3cc5ed732c1b0bda782d9d986be81e
   only-arches:
     - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-graphics/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/19/javafx-graphics-19-linux.jar
-  sha1: df76254a104329796414ae619ec0b4e1f9616452
+  dest: .m2/repository/org/openjfx/javafx-graphics/19.0.2.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1-linux.jar
+  sha1: 27c64e4e1569ddf198f28eda84cf8d014ab80693
   only-arches:
     - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-swing/19
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19/javafx-swing-19-linux.jar
-  sha1: 253eceb129b4afc539d3aaf676dcd53ba3795f7e
+  dest: .m2/repository/org/openjfx/javafx-swing/19.0.2.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19.0.2.1/javafx-swing-19.0.2.1-linux.jar
+  sha1: 24e650292acb23970ef8791005d24cada63f5d5c
   only-arches:
     - x86_64
