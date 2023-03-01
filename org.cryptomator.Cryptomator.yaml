@@ -120,28 +120,28 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jdk_x64_linux_hotspot_19.0.1_10.tar.gz
-        sha512: 4e617eade65156db9049ec7fc0c7b2bd9cc867413eba74bde1766d42b293a44500ee10f896206d9f17104fab68afa7e5c80265a53c0d01022769cd5727d6dbfc
+        url: https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_x64_linux_hotspot_19.0.2_7.tar.gz
+        sha512: bc04881cd3b999ede7dd4f3d580518b99990885cb57a165e807e32837b18cc7b4fd3a9320376222507f085b5f4fe88fd69d2b26dd4f8f34c890f000e6b316880
         dest-filename: jdk.tar.gz
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jdk_aarch64_linux_hotspot_19.0.1_10.tar.gz
+        url: https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_aarch64_linux_hotspot_19.0.2_7.tar.gz
+        sha512: 2198e2440c40c3517eab680dce34743c26f52629cb3cffc2f5a2b0a8813d637bb3e683a3ca4bc8e30f69579b7ec2bf0bf06f26f1e3e60e0764e464719013cdd5
         dest-filename: jdk.tar.gz
-        sha512: 8a2c63b41a111aaa87c75f7999ceb67bdc5a7aae081ad4a16dcc1fd71400a0b7dd1b2a135e1fac32256b4df97e77738851880ef3483823304292ae88f89dcf8d
       - type: file
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/19/openjfx-19_linux-x64_bin-jmods.zip
+        url: https://download2.gluonhq.com/openjfx/19.0.2.1/openjfx-19.0.2.1_linux-x64_bin-jmods.zip
+        sha512: 83a70834aec3b894abb1d68f0e9ddc255f266d48392cdb5c4712514d81bf5450d89c7a36c4a5abce87082a54efda8f8d1874872ee064a18398ddb3a9337c5cd9
         dest-filename: openjfx.zip
-        sha512: 051d14ea3ffc304b5535fa58494a372729e2204f41ae29601871be4aca14db81c254b96d488eccc872e2239f21d47c27de1942fb423ad4c28a2aca9f52d57c26
       - type: file
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/19/openjfx-19_linux-aarch64_bin-jmods.zip
+        url: https://download2.gluonhq.com/openjfx/19.0.2.1/openjfx-19.0.2.1_linux-aarch64_bin-jmods.zip
+        sha512: dfe97808504103ce7512ce79583088fb8be65280f9336780c40a2f4063bab72b32601059180bd0110324d7f565c640705b65fbbada26cb57648ae56589696288
         dest-filename: openjfx.zip
-        sha512: 12d01d37f46b53f1b0bbf70eb802bd2ab5f4e671a7ec6b742c96bb1d304e48f662b5e7b3d5aaef2eb11119d8cae217f9eb52e65eb986d07363f1335e5134d4dc
       - type: file
         url: http://archive.apache.org/dist/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-        dest-filename: maven.tar.gz
         sha512: f790857f3b1f90ae8d16281f902c689e4f136ebe584aba45e4b1fa66c80cba826d3e0e52fdd04ed44b4c66f6d3fe3584a057c26dfcac544a60b301e6d0f91c26
+        dest-filename: maven.tar.gz
