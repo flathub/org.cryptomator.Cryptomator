@@ -5,19 +5,34 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 finish-args:
+  # OpenGL rendering
   - --device=dri
+  # Set the PATH environment variable in the application, as flatpak is resetting the shell's PATH
   - --env=PATH=/app/bin/:/usr/bin/
+  # Allow filesystem access to the user's home dir
+  # Needed to manage vaults there
   - --filesystem=home
+  # Allow access to the XDG data directory
+  # Needed to connect to KeePassXC's UNIX domain socket
   - --filesystem=xdg-run/org.keepassxc.KeePassXC.BrowserServer
   - --filesystem=xdg-run/app/org.keepassxc.KeePassXC/
+  # Share IPC namespace with the host, without it the X11 shared memory extension will not work
   - --share=ipc
+  # Allow access to the network
   - --share=network
+  # Show windows using X11
   - --socket=x11
+  # Run any command on the host
+  # Needed to spawn fusermount on the host
   - --talk-name=org.freedesktop.Flatpak
+  # Allow desktop notifications
   - --talk-name=org.freedesktop.Notifications
+  # Allow access to the GNOME secret service API and to talk to the GNOME keyring daemon
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring
+  # Allow to talk to the KDE kwallet daemon
   - --talk-name=org.kde.kwalletd5
+  # Needed to talk to the gvfs daemons over D-Bus and list mounts using the GIO APIs
   - --talk-name=org.gtk.vfs.*
 cleanup:
   - /include
