@@ -18,13 +18,13 @@
     - aarch64
 - type: file
   dest: .m2/repository/org/openjfx/javafx-graphics/19.0.2.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javaf-graphics/19.0.2.1/javafx-graphics-19.0.2.1-linux-aarch64.jar
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1-linux-aarch64.jar
   sha1: cad8004a87f57d9813c52985894ef15e8011baee
   only-arches:
     - aarch64
 - type: file
   dest: .m2/repository/org/openjfx/javafx-swing/19.0.2.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javaf-swing/19.0.2.1/javafx-swing-19.0.2.1-linux-aarch64.jar
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/19.0.2.1/javafx-swing-19.0.2.1-linux-aarch64.jar
   sha1: cd5cedd7636b668ad8877bc4871a7edb081867b7
   only-arches:
     - aarch64
