@@ -130,7 +130,7 @@ modules:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
-      - type: archive #TODO: adjust once 1.7.0 is released
+      - type: archive
         sha512: e93b5c83a841014ecc500c929b94c09bb2ab6c698c643c90bfeb1dd52e9d816c4da07965743f2a7edae367442a5bf0f319e4c647d284c307c0f36e6067a7673c
         url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.7.0.tar.gz
       - type: file
