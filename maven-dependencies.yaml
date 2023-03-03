@@ -91,13 +91,25 @@
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.13.4/jackson-bom-2.13.4.pom
   sha1: 2edb5a2679055d798640f77cf36c929e7094884b
 - type: file
+  dest: .m2/repository/com/fasterxml/jackson/jackson-bom/2.14.1
+  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.14.1/jackson-bom-2.14.1.pom
+  sha1: ef096b0bad63a878d8f0ce609563bdae06326aa1
+- type: file
   dest: .m2/repository/com/fasterxml/jackson/jackson-parent/2.13
   url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.13/jackson-parent-2.13.pom
   sha1: f6a50c4f6c369a82cc6f38363410d6f3c03aaf7c
 - type: file
+  dest: .m2/repository/com/fasterxml/jackson/jackson-parent/2.14
+  url: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.14/jackson-parent-2.14.pom
+  sha1: dc7342332cd6011d0694abec10a676a9cfe29d6b
+- type: file
   dest: .m2/repository/com/fasterxml/oss-parent/43
   url: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/43/oss-parent-43.pom
   sha1: b07427a553422225d489ca19fd3fcdc38c02aa16
+- type: file
+  dest: .m2/repository/com/fasterxml/oss-parent/48
+  url: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/48/oss-parent-48.pom
+  sha1: 35829270f540f9e687c5b0372da06a456afb699b
 - type: file
   dest: .m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.4
   url: https://repo.maven.apache.org/maven2/com/github/ben-manes/caffeine/caffeine/3.1.4/caffeine-3.1.4.jar
@@ -2499,13 +2511,13 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/siv-mode/1.4.4/siv-mode-1.4.4.pom
   sha1: 6a2419a0bd616ab06a81c1bfe23c2a051a6fa376
 - type: file
-  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.0
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.0/webdav-nio-adapter-2.0.0.jar
-  sha1: c2431c79eab0a223feb4ca8a1b51ba6bc43c926a
+  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.1/webdav-nio-adapter-2.0.1.jar
+  sha1: 5d7106b2997f38d3a6301f9a81c74b43d0ad4415
 - type: file
-  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.0
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.0/webdav-nio-adapter-2.0.0.pom
-  sha1: 8401c6f4db916a068f9cf3e4abb745818dcf182b
+  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.1/webdav-nio-adapter-2.0.1.pom
+  sha1: bc8e7dc1f63af1546265cc2d4a7b6c1f95431638
 - type: file
   dest: .m2/repository/org/cryptomator/webdav-nio-adapter-servlet/1.2.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter-servlet/1.2.3/webdav-nio-adapter-servlet-1.2.3.jar
@@ -2579,57 +2591,57 @@
   url: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.1.0/aether-util-1.1.0.pom
   sha1: 2648fa8032a1428718a58b53fb9badae64643dd0
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-http/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/10.0.13/jetty-http-10.0.13.jar
-  sha1: b3dc7ec1da090106031dd36cb1e2637a7fb6ce1c
+  dest: .m2/repository/org/eclipse/jetty/jetty-http/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/10.0.14/jetty-http-10.0.14.jar
+  sha1: b2b4cf940e2c3fdf08dd1df021c98a2d3900c180
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-http/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/10.0.13/jetty-http-10.0.13.pom
-  sha1: bdb9355d9c709a47465442b8ac5d1076e7205598
+  dest: .m2/repository/org/eclipse/jetty/jetty-http/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/10.0.14/jetty-http-10.0.14.pom
+  sha1: c1bff670f6d294eb6320bb2abb91a4f3bb39dcf7
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-io/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/10.0.13/jetty-io-10.0.13.jar
-  sha1: be9d7f226022b02e174a83d597d088e22e12d365
+  dest: .m2/repository/org/eclipse/jetty/jetty-io/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/10.0.14/jetty-io-10.0.14.jar
+  sha1: ee92790503e9c535fdc50a4ef5f82b61c8b1b276
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-io/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/10.0.13/jetty-io-10.0.13.pom
-  sha1: a1bb64d5fbe2104a8db85b943565326e3bf59a6d
+  dest: .m2/repository/org/eclipse/jetty/jetty-io/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/10.0.14/jetty-io-10.0.14.pom
+  sha1: 7b93c543712c957ad9960059404844e05c70820c
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-project/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-project/10.0.13/jetty-project-10.0.13.pom
-  sha1: a69b0198307a41e8c69d09222992d7edf19e792c
+  dest: .m2/repository/org/eclipse/jetty/jetty-project/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-project/10.0.14/jetty-project-10.0.14.pom
+  sha1: 808525bfd71061efe888b066064c7b074bbbc07f
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-security/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/10.0.13/jetty-security-10.0.13.jar
-  sha1: 6d4c88cf068709d9f2499ca417b23f3f835b0c43
+  dest: .m2/repository/org/eclipse/jetty/jetty-security/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/10.0.14/jetty-security-10.0.14.jar
+  sha1: 13079ff92ad91a24485221ce4422db70c8fa4525
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-security/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/10.0.13/jetty-security-10.0.13.pom
-  sha1: 9eb6d9a8c8b11e0cdcd59255893eb52d1bb41186
+  dest: .m2/repository/org/eclipse/jetty/jetty-security/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/10.0.14/jetty-security-10.0.14.pom
+  sha1: ef543e55437239ccebc1b16c95e59dcd7b29af3b
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-server/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/10.0.13/jetty-server-10.0.13.jar
-  sha1: f472705ebfce7e9a5b6cb8cbb84e73767e35fad7
+  dest: .m2/repository/org/eclipse/jetty/jetty-server/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/10.0.14/jetty-server-10.0.14.jar
+  sha1: 08770d77f1e3a3db71ed3e4f6cb1b10870c8711a
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-server/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/10.0.13/jetty-server-10.0.13.pom
-  sha1: c4d4e651bfac1dc9084cbd69861e6a644801872e
+  dest: .m2/repository/org/eclipse/jetty/jetty-server/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/10.0.14/jetty-server-10.0.14.pom
+  sha1: f6875576ac282c0d626724ad12ac72f8d3919de0
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-servlet/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/10.0.13/jetty-servlet-10.0.13.jar
-  sha1: a6ee6e48e98377863aa80f41ea979df678b17966
+  dest: .m2/repository/org/eclipse/jetty/jetty-servlet/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/10.0.14/jetty-servlet-10.0.14.jar
+  sha1: e062dd44ca5af73bb12914853ba3c1e7a076eb2b
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-servlet/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/10.0.13/jetty-servlet-10.0.13.pom
-  sha1: f7020e3fddd4e3b8ea3b8c7b6fdfef410d2156bf
+  dest: .m2/repository/org/eclipse/jetty/jetty-servlet/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/10.0.14/jetty-servlet-10.0.14.pom
+  sha1: 16e503114c931ba0c48df0b980062180f32000ae
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-util/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/10.0.13/jetty-util-10.0.13.jar
-  sha1: 35caf3afb3cca22ca4bc36908bf82e6d973c5be4
+  dest: .m2/repository/org/eclipse/jetty/jetty-util/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/10.0.14/jetty-util-10.0.14.jar
+  sha1: cd925f007d022928a66a7ceec3a809cd343aa77d
 - type: file
-  dest: .m2/repository/org/eclipse/jetty/jetty-util/10.0.13
-  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/10.0.13/jetty-util-10.0.13.pom
-  sha1: bd925163e1db35a435ed7d79207c9462ad0db8b9
+  dest: .m2/repository/org/eclipse/jetty/jetty-util/10.0.14
+  url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/10.0.14/jetty-util-10.0.14.pom
+  sha1: 0b2ba2a3103d1b7c873f60c2c7ca97c3953476b6
 - type: file
   dest: .m2/repository/org/eclipse/jetty/toolchain/jetty-servlet-api/4.0.6
   url: https://repo.maven.apache.org/maven2/org/eclipse/jetty/toolchain/jetty-servlet-api/4.0.6/jetty-servlet-api-4.0.6.jar
@@ -2707,13 +2719,13 @@
   url: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
   sha1: 80391bd32bfa4837a15215d5e9f07c60555c379a
 - type: file
-  dest: .m2/repository/org/infinispan/infinispan-bom/11.0.16.Final
-  url: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/11.0.16.Final/infinispan-bom-11.0.16.Final.pom
-  sha1: ae57da0a131a6538acc128fcfeeb55bc081bb223
+  dest: .m2/repository/org/infinispan/infinispan-bom/11.0.17.Final
+  url: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/11.0.17.Final/infinispan-bom-11.0.17.Final.pom
+  sha1: eb9e7474bb456a3b3410a669732f4a6bd1db8ac9
 - type: file
-  dest: .m2/repository/org/infinispan/infinispan-build-configuration-parent/11.0.16.Final
-  url: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/11.0.16.Final/infinispan-build-configuration-parent-11.0.16.Final.pom
-  sha1: 078d51813d70fd6dff3c7836588a2d9ffca405a3
+  dest: .m2/repository/org/infinispan/infinispan-build-configuration-parent/11.0.17.Final
+  url: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/11.0.17.Final/infinispan-build-configuration-parent-11.0.17.Final.pom
+  sha1: f32a3967319b6b9593f44e255024044caf264953
 - type: file
   dest: .m2/repository/org/iq80/snappy/snappy/0.4
   url: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar
@@ -3019,9 +3031,17 @@
   url: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.2/asm-9.2.pom
   sha1: b24408a1c2214bc57380faf45b37bd67be7732b5
 - type: file
+  dest: .m2/repository/org/ow2/asm/asm-bom/9.4
+  url: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-bom/9.4/asm-bom-9.4.pom
+  sha1: 11183eeb0b986a0f6660abc0839281769bb065d3
+- type: file
   dest: .m2/repository/org/ow2/ow2/1.5
   url: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5/ow2-1.5.pom
   sha1: d8edc69335f4d9f95f511716fb689c86fb0ebaae
+- type: file
+  dest: .m2/repository/org/ow2/ow2/1.5.1
+  url: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom
+  sha1: bda66fa5f1b68fa7d2de3d569bdc8508b2af82d4
 - type: file
   dest: .m2/repository/org/purejava/kdewallet/1.2.8
   url: https://repo.maven.apache.org/maven2/org/purejava/kdewallet/1.2.8/kdewallet-1.2.8.jar
@@ -3339,9 +3359,9 @@
   url: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
   sha1: 7f500699ef371383492a4d6ee799b1a77ffd82cc
 - type: file
-  dest: .m2/repository/org/testcontainers/testcontainers-bom/1.17.5
-  url: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.17.5/testcontainers-bom-1.17.5.pom
-  sha1: dcd6f532c580523ad4c1663526e89138fb77282f
+  dest: .m2/repository/org/testcontainers/testcontainers-bom/1.17.6
+  url: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.17.6/testcontainers-bom-1.17.6.pom
+  sha1: 1cc17f6c48e7295832f49277b6e291754424d4c1
 - type: file
   dest: .m2/repository/org/tukaani/xz/1.8
   url: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.jar
