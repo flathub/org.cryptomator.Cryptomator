@@ -78,8 +78,7 @@ modules:
       # Setup Java
       - tar xvfz jdk.tar.gz --transform 's!^[^/]*!jdk!'
       - mkdir jmods
-      - unzip -j openjfx.zip \*/javafx.base.jmod \*/javafx.controls.jmod \*/javafx.fxml.jmod
-        \*/javafx.graphics.jmod -d jmods
+      - unzip -j openjfx.zip \*/javafx.base.jmod \*/javafx.controls.jmod \*/javafx.fxml.jmod \*/javafx.graphics.jmod -d jmods
       # Setup Maven
       - mkdir maven
       - tar xf maven.tar.gz --strip-components=1 --exclude=jansi-native --directory=maven
@@ -88,22 +87,39 @@ modules:
       - cp dist/linux/launcher* target
       - cp target/cryptomator-*.jar target/mods
       - cd target
-      - $JAVA_HOME/bin/jlink --output runtime --module-path $JMODS_PATH --add-modules
-        java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.unsupported,jdk.crypto.ec,jdk.security.auth,jdk.accessibility,jdk.management.jfr
-        --no-header-files --no-man-pages --strip-debug --compress=1
-      - $JAVA_HOME/bin/jpackage --type app-image --runtime-image runtime --input target/libs
-        --module-path target/mods --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
-        --dest . --name Cryptomator --vendor 'Skymatic GmbH' --java-options '--enable-preview'
+      - $JAVA_HOME/bin/jlink
+        --output runtime
+        --module-path $JMODS_PATH
+        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.unsupported,jdk.crypto.ec,jdk.security.auth,jdk.accessibility,jdk.management.jfr
+        --no-header-files
+        --no-man-pages
+        --strip-debug
+        --compress=1
+      - $JAVA_HOME/bin/jpackage
+        --type app-image
+        --runtime-image runtime
+        --input target/libs
+        --module-path target/mods
+        --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
+        --dest .
+        --name Cryptomator
+        --vendor 'Skymatic GmbH'
+        --java-options '--enable-preview'
         --java-options '--enable-native-access=org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64'
-        --copyright '(C) 2016 - 2023 Skymatic GmbH' --java-options '-Xss5m' --java-options
-        '-Xmx256m' --java-options '-Dfile.encoding='utf-8'' --java-options '-Dcryptomator.logDir='~/.local/share/Cryptomator/logs''
+        --copyright '(C) 2016 - 2023 Skymatic GmbH'
+        --java-options '-Xss5m'
+        --java-options '-Xmx256m'
+        --java-options '-Dfile.encoding='utf-8''
+        --java-options '-Dcryptomator.logDir='~/.local/share/Cryptomator/logs''
         --java-options '-Dcryptomator.settingsPath='~/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
-        --java-options '-Dcryptomator.p12Path='~/.config/Cryptomator/key.p12'' --java-options
-        '-Dcryptomator.ipcSocketPath='~/.config/Cryptomator/ipc.socket'' --java-options
-        '-Dcryptomator.mountPointsDir='~/.local/share/Cryptomator/mnt'' --java-options
-        '-Dcryptomator.pluginDir='~/.local/share/Cryptomator/plugins'' --java-options
-        '-Dcryptomator.showTrayIcon=false' --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
-        --java-options "-Dcryptomator.appVersion='${VERSION}'" --app-version "${VERSION}.${REVISION_NO}"
+        --java-options '-Dcryptomator.p12Path='~/.config/Cryptomator/key.p12''
+        --java-options '-Dcryptomator.ipcSocketPath='~/.config/Cryptomator/ipc.socket''
+        --java-options '-Dcryptomator.mountPointsDir='~/.local/share/Cryptomator/mnt''
+        --java-options '-Dcryptomator.pluginDir='~/.local/share/Cryptomator/plugins''
+        --java-options '-Dcryptomator.showTrayIcon=false'
+        --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
+        --java-options "-Dcryptomator.appVersion='${VERSION}'"
+        --app-version "${VERSION}.${REVISION_NO}"
         --verbose
       - cp -R Cryptomator /app/
       - ln -s /app/Cryptomator/bin/Cryptomator /app/bin/cryptomator
