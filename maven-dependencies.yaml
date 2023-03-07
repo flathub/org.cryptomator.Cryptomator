@@ -2423,13 +2423,13 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/dokany-nio-adapter/2.0.0/dokany-nio-adapter-2.0.0.pom
   sha1: c64ca45ae58db9efe495048d07d73f83c7ad6822
 - type: file
-  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.2
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.2/fuse-nio-adapter-2.0.2.jar
-  sha1: 1999de425d663b610b311c3e9aad18f7e4c8874d
+  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.3
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.3/fuse-nio-adapter-2.0.3.jar
+  sha1: b826ebb54ceaf489ea7a07b4500adf202fad1790
 - type: file
-  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.2
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.2/fuse-nio-adapter-2.0.2.pom
-  sha1: d52f9866db0851e8aae83e2e76961addcbf3de6d
+  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.3
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.3/fuse-nio-adapter-2.0.3.pom
+  sha1: 9b11f87dfe05410fd03dcfd58042accea19a4fd6
 - type: file
   dest: .m2/repository/org/cryptomator/integrations-api/1.2.0
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.2.0/integrations-api-1.2.0.jar
@@ -2511,13 +2511,13 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/siv-mode/1.4.4/siv-mode-1.4.4.pom
   sha1: 6a2419a0bd616ab06a81c1bfe23c2a051a6fa376
 - type: file
-  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.1/webdav-nio-adapter-2.0.1.jar
-  sha1: 5d7106b2997f38d3a6301f9a81c74b43d0ad4415
+  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.2/webdav-nio-adapter-2.0.2.jar
+  sha1: 94a7c4c3deb9f6862179717f6043b26b5da7ffdf
 - type: file
-  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.1/webdav-nio-adapter-2.0.1.pom
-  sha1: bc8e7dc1f63af1546265cc2d4a7b6c1f95431638
+  dest: .m2/repository/org/cryptomator/webdav-nio-adapter/2.0.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter/2.0.2/webdav-nio-adapter-2.0.2.pom
+  sha1: 4d28255cfc2f5c26bae31e6a635ffd073ba86cfc
 - type: file
   dest: .m2/repository/org/cryptomator/webdav-nio-adapter-servlet/1.2.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/webdav-nio-adapter-servlet/1.2.3/webdav-nio-adapter-servlet-1.2.3.jar
