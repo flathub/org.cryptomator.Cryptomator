@@ -73,7 +73,7 @@ modules:
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
         VERSION: 1.7.3
-        REVISION_NO: '2'
+        REVISION_NO: '1'
     build-commands:
       # Setup Java
       - tar xvfz jdk.tar.gz --transform 's!^[^/]*!jdk!'
