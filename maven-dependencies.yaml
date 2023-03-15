@@ -47,10 +47,6 @@
   url: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
   sha1: 8c8ad6a96a8c1168f8b12ec8a227b8261b160b26
 - type: file
-  dest: .m2/repository/com/auth0/java-jwt/4.2.1
-  url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1.pom
-  sha1: ba51faff36529a8929bfdc396233dd72242fc655
-- type: file
   dest: .m2/repository/com/auth0/java-jwt/4.3.0
   url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/4.3.0/java-jwt-4.3.0.jar
   sha1: 4265e12233eb32d158f6263b6a036217e3f6c7bd
@@ -2395,25 +2391,21 @@
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.pom
   sha1: ed912aed85e5225ef3dda9a9cd2acaa0a08c643b
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.1/cryptofs-2.6.1.jar
-  sha1: 400216bbb64f2a428122e4030239cfc88187c4ce
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.2/cryptofs-2.6.2.jar
+  sha1: 9b6eea1b980a9faa0aeecc22c614acba0338ce4a
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.1/cryptofs-2.6.1.pom
-  sha1: df83164d0d31aa3743ac76a9cb14aa3ef617e3d5
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.2/cryptofs-2.6.2.pom
+  sha1: fb54d1e7a4b45e5338781c4120b15cdd4455d8e1
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptolib/2.1.0
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.0/cryptolib-2.1.0.pom
-  sha1: 99c87e74dd40b025d51877ca3f334111292dec01
+  dest: .m2/repository/org/cryptomator/cryptolib/2.1.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.2/cryptolib-2.1.2.jar
+  sha1: d397438ada7c415592b480e61eaa9c10efd87710
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptolib/2.1.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.1/cryptolib-2.1.1.jar
-  sha1: b9d9162ad289dbd6dd4dfa5bff659dac334ff5c9
-- type: file
-  dest: .m2/repository/org/cryptomator/cryptolib/2.1.1
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.1/cryptolib-2.1.1.pom
-  sha1: 6d5580088a76c3c738072680663f6a80c7a68ade
+  dest: .m2/repository/org/cryptomator/cryptolib/2.1.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.2/cryptolib-2.1.2.pom
+  sha1: 91f10561010e71bc945c1047de61d37fb50f34a2
 - type: file
   dest: .m2/repository/org/cryptomator/dokany-nio-adapter/2.0.0
   url: https://repo.maven.apache.org/maven2/org/cryptomator/dokany-nio-adapter/2.0.0/dokany-nio-adapter-2.0.0.jar
@@ -2423,13 +2415,13 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/dokany-nio-adapter/2.0.0/dokany-nio-adapter-2.0.0.pom
   sha1: c64ca45ae58db9efe495048d07d73f83c7ad6822
 - type: file
-  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.3/fuse-nio-adapter-2.0.3.jar
-  sha1: b826ebb54ceaf489ea7a07b4500adf202fad1790
+  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.4
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.4/fuse-nio-adapter-2.0.4.jar
+  sha1: 0e3b23c03cf2b93d7e2aafaa0205ddacc2045812
 - type: file
-  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.3/fuse-nio-adapter-2.0.3.pom
-  sha1: 9b11f87dfe05410fd03dcfd58042accea19a4fd6
+  dest: .m2/repository/org/cryptomator/fuse-nio-adapter/2.0.4
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/fuse-nio-adapter/2.0.4/fuse-nio-adapter-2.0.4.pom
+  sha1: 007b04f7f9d133afc829114a07f21912abba371a
 - type: file
   dest: .m2/repository/org/cryptomator/integrations-api/1.2.0
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.2.0/integrations-api-1.2.0.jar
@@ -2451,57 +2443,57 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.2.0/integrations-linux-1.2.0.pom
   sha1: d6d13409a2bf000dd552f4bb6d8d37fe5d69ff9a
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.3.3/jfuse-0.3.3.jar
-  sha1: 0b5d9f8e57c558903f278b0a51d580d4cbbced6d
+  dest: .m2/repository/org/cryptomator/jfuse/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.4.1/jfuse-0.4.1.jar
+  sha1: 4994c6ba748f4dd96addb122477668e564d23eec
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.3.3/jfuse-0.3.3.pom
-  sha1: 24c22c38ab344f2e81d49a3042d9b1e77de98c0f
+  dest: .m2/repository/org/cryptomator/jfuse/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.4.1/jfuse-0.4.1.pom
+  sha1: 2248ebf8f332b505d9e1bd4bd9632aeb718b1ed0
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-api/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-api/0.3.3/jfuse-api-0.3.3.jar
-  sha1: 544aed2818bf874f4c55aa6b5067d73a0d955062
+  dest: .m2/repository/org/cryptomator/jfuse-api/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-api/0.4.1/jfuse-api-0.4.1.jar
+  sha1: c2f2fe833bf4c6731ff9bcdc4c1e04180b59805f
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-api/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-api/0.3.3/jfuse-api-0.3.3.pom
-  sha1: e07578f56793e9e584a3c8a8ab3cbb26521c7c1a
+  dest: .m2/repository/org/cryptomator/jfuse-api/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-api/0.4.1/jfuse-api-0.4.1.pom
+  sha1: ce4648544cc317c9634f3f930e8b7fe71c04e824
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-linux-aarch64/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-aarch64/0.3.3/jfuse-linux-aarch64-0.3.3.jar
-  sha1: 6de16bf65e63b81320af289d80fd6e48a14eee42
+  dest: .m2/repository/org/cryptomator/jfuse-linux-aarch64/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-aarch64/0.4.1/jfuse-linux-aarch64-0.4.1.jar
+  sha1: 7e34649f0eebd14fce987ac44c376da005759f59
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-linux-aarch64/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-aarch64/0.3.3/jfuse-linux-aarch64-0.3.3.pom
-  sha1: 8ca176563ee906b6775f79e389be947d1998663f
+  dest: .m2/repository/org/cryptomator/jfuse-linux-aarch64/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-aarch64/0.4.1/jfuse-linux-aarch64-0.4.1.pom
+  sha1: e54a8f37ced7dace2ee0682a89041c01709fa917
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-linux-amd64/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-amd64/0.3.3/jfuse-linux-amd64-0.3.3.jar
-  sha1: adf01d9eca81ac09d7e15d7bcf5063807547cce2
+  dest: .m2/repository/org/cryptomator/jfuse-linux-amd64/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-amd64/0.4.1/jfuse-linux-amd64-0.4.1.jar
+  sha1: 5db0b59d049b70d573cd3f03ad88b0c95b372a11
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-linux-amd64/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-amd64/0.3.3/jfuse-linux-amd64-0.3.3.pom
-  sha1: 4298748e2b41132a36bced0f18a123fb0f480137
+  dest: .m2/repository/org/cryptomator/jfuse-linux-amd64/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-linux-amd64/0.4.1/jfuse-linux-amd64-0.4.1.pom
+  sha1: 13962212df33c342c1b4d1309b3832bda2b670fd
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-mac/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-mac/0.3.3/jfuse-mac-0.3.3.jar
-  sha1: 6f72666cee667fadc8f4a3f827dfda201c35b2d1
+  dest: .m2/repository/org/cryptomator/jfuse-mac/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-mac/0.4.1/jfuse-mac-0.4.1.jar
+  sha1: 6e0d657079691808a2660ac1532f53f3c3fdc03d
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-mac/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-mac/0.3.3/jfuse-mac-0.3.3.pom
-  sha1: c622043219ce233cfbf1c102e97d0c39c71a79da
+  dest: .m2/repository/org/cryptomator/jfuse-mac/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-mac/0.4.1/jfuse-mac-0.4.1.pom
+  sha1: 99f7ff8ef42f6bc2a809f2033ac0472051ef922c
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-parent/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-parent/0.3.3/jfuse-parent-0.3.3.pom
-  sha1: 848ff9d9578e864950d1aeb09dc8d9908a00fc9b
+  dest: .m2/repository/org/cryptomator/jfuse-parent/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-parent/0.4.1/jfuse-parent-0.4.1.pom
+  sha1: 3cd9e541bae9e466964919a7c024e452f6b752b6
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-win/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-win/0.3.3/jfuse-win-0.3.3.jar
-  sha1: 7999f5ddb95a1e40ff3d3ffce5ca12349e158487
+  dest: .m2/repository/org/cryptomator/jfuse-win/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-win/0.4.1/jfuse-win-0.4.1.jar
+  sha1: 1f7268a3e68f0131e0fa8cf515535bd0c186b995
 - type: file
-  dest: .m2/repository/org/cryptomator/jfuse-win/0.3.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-win/0.3.3/jfuse-win-0.3.3.pom
-  sha1: bf19e24b109cdeb73f9559ddaa0f76dfc4a9a1fc
+  dest: .m2/repository/org/cryptomator/jfuse-win/0.4.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse-win/0.4.1/jfuse-win-0.4.1.pom
+  sha1: 1ba0ad8915d07370a91bec4c7380a23d21aa1954
 - type: file
   dest: .m2/repository/org/cryptomator/siv-mode/1.4.4
   url: https://repo.maven.apache.org/maven2/org/cryptomator/siv-mode/1.4.4/siv-mode-1.4.4.jar
