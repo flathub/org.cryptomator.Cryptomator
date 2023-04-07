@@ -2371,13 +2371,13 @@
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.pom
   sha1: ed912aed85e5225ef3dda9a9cd2acaa0a08c643b
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.3/cryptofs-2.6.3.jar
-  sha1: f6638142e23fc16ada353fadf93041d45dbe41de
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.2/cryptofs-2.6.2.jar
+  sha1: 9b6eea1b980a9faa0aeecc22c614acba0338ce4a
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.3/cryptofs-2.6.3.pom
-  sha1: bb6f986a8f8a17c16ffb97caa1ff61c565673a86
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.2
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.2/cryptofs-2.6.2.pom
+  sha1: fb54d1e7a4b45e5338781c4120b15cdd4455d8e1
 - type: file
   dest: .m2/repository/org/cryptomator/cryptolib/2.1.2
   url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.2/cryptolib-2.1.2.jar
