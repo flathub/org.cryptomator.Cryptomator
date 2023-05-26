@@ -50,8 +50,8 @@ modules:
       - -Dudevrulesdir=/tmp/
     sources:
       - type: archive
-        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.14.0/fuse-3.14.0.tar.xz
-        sha256: 96115b2a8ff34bd1e0c7b00c5dfd8297571d7e165042b94498c9a26356a9a70a
+        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.14.1/fuse-3.14.1.tar.xz
+        sha256: 126919d72b46b3e0eb58a9c6933a2a50c36f2ea69f61fe9e78bdba9f463ffa20
         x-checker-data:
           type: anitya
           project-id: 861
@@ -72,7 +72,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.7.3
+        VERSION: 1.8.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -131,8 +131,8 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: da21418ceca1d90b5fca97a9eb134d1acdb6e1bbcebce857b39c516b9ecd08edd44148b793516b27b1a1d2be93709155f254394d56ed0d769e9f13a1c852359b
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.7.3.tar.gz
+        sha512: acde92c13636c5c7eb3c515f66700e508b593a762db7f94e1bac4a04c83258ab24646153ceff689c1a4d8bcf167078e569ae68d66037891c03a670dec4dd4731
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.8.0.tar.gz
       - type: file
         only-arches:
           - x86_64
