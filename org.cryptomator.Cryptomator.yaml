@@ -44,6 +44,7 @@ modules:
     buildsystem: meson
     config-opts:
       - -Dexamples=false
+      - -Dinitscriptdir=
       - -Duseroot=false
       - -Dtests=false
       # don't install rules on the host
