@@ -134,11 +134,9 @@ modules:
       - cp -R /app/lib/* /app/Cryptomator/lib/app/
       - install -D -m0644 -t /app/share/applications/ dist/linux/common/org.cryptomator.Cryptomator.desktop
       - install -D -m0644 -t /app/share/icons/hicolor/scalable/apps/ dist/linux/common/org.cryptomator.Cryptomator.svg
-      - install -D -m0644 -t /app/share/icons/hicolor/symbolic/apps/ dist/linux/common/org.cryptomator.Cryptomator.tray.svg
-      - install -D -m0644 -t /app/share/icons/hicolor/symbolic/apps/ dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg
+      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-symbolic.svg
+      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
-      - mv /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-symbolic.svg
-      - mv /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
     sources:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
