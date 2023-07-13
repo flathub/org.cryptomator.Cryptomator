@@ -111,6 +111,7 @@ modules:
         --java-options '-Xss5m'
         --java-options '-Xmx256m'
         --java-options '-Dfile.encoding='utf-8''
+        --java-options '-Djava.net.useSystemProxies=true'
         --java-options '-Dcryptomator.logDir='~/.local/share/Cryptomator/logs''
         --java-options '-Dcryptomator.settingsPath='~/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
         --java-options '-Dcryptomator.p12Path='~/.config/Cryptomator/key.p12''
