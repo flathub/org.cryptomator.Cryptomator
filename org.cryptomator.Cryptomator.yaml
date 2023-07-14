@@ -51,8 +51,8 @@ modules:
       - -Dudevrulesdir=/tmp/
     sources:
       - type: archive
-        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.15.1/fuse-3.15.1.tar.gz
-        sha256: 13ef77cda531a21c2131f9576042970e98035c0a5f019abf661506efd2d38a4e
+        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.14.1/fuse-3.14.1.tar.xz
+        sha256: 126919d72b46b3e0eb58a9c6933a2a50c36f2ea69f61fe9e78bdba9f463ffa20
         x-checker-data:
           type: anitya
           project-id: 861
