@@ -63,7 +63,7 @@ modules:
         x-checker-data:
           type: anitya
           project-id: 861
-          url-template: https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.xz
+          url-template: https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz
           versions: {<: '4.0'}
   - name: host-command-wrapper
     buildsystem: simple
@@ -80,7 +80,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.9.0
+        VERSION: 1.9.1
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -142,8 +142,8 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 3e61ceeb42cabe9dd9a1437f242556c0f7b59d938f31489b6cf8b70b4a700c07199ad744b5f0cd8c0810d9121ccac6b14d605a437905fa3acedac15d9f1360ed
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.9.0.tar.gz
+        sha512: 6b24ee2737b835567fc8f9dfe2f725c99798e183f438dfcd37c84275c640e32e9d06f8afcf1d9e868988a72fa1890c9ce4accfe07e2d7a9514bbd0482070ac7f
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.9.1.tar.gz
       - type: file
         only-arches:
           - x86_64

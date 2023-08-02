@@ -275,6 +275,10 @@
   url: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.pom
   sha1: ced1afa200bbf344ccdef14b92aa84f7863f395c
 - type: file
+  dest: .m2/repository/com/google/errorprone/error_prone_annotations/2.18.0
+  url: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.pom
+  sha1: 6d7bbfd3d7567e4c18e981a675ecda707e8a2db1
+- type: file
   dest: .m2/repository/com/google/errorprone/error_prone_parent/2.3.4
   url: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.3.4/error_prone_parent-2.3.4.pom
   sha1: a9b9dd42d174a5f96d6c195525877fc6d0b2028a
@@ -286,6 +290,10 @@
   dest: .m2/repository/com/google/errorprone/error_prone_parent/2.11.0
   url: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.11.0/error_prone_parent-2.11.0.pom
   sha1: bd585f378139da5b5e670840892c48e75d03cf7b
+- type: file
+  dest: .m2/repository/com/google/errorprone/error_prone_parent/2.18.0
+  url: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.18.0/error_prone_parent-2.18.0.pom
+  sha1: b1779a677965027cd2a3de91e61a80102086bb30
 - type: file
   dest: .m2/repository/com/google/errorprone/javac-shaded/9-dev-r4023-3
   url: https://repo.maven.apache.org/maven2/com/google/errorprone/javac-shaded/9-dev-r4023-3/javac-shaded-9-dev-r4023-3.jar
@@ -348,12 +356,16 @@
   sha1: d0ec1628dcc04e4835721416103672384ea3136f
 - type: file
   dest: .m2/repository/com/google/guava/guava/31.1-jre
-  url: https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar
-  sha1: 60458f877d055d0c9114d9e1a2efb737b4bc282c
-- type: file
-  dest: .m2/repository/com/google/guava/guava/31.1-jre
   url: https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.pom
   sha1: 03a6ac93765fbbc416179f7c7127b9ddddbf38d9
+- type: file
+  dest: .m2/repository/com/google/guava/guava/32.0.0-jre
+  url: https://repo.maven.apache.org/maven2/com/google/guava/guava/32.0.0-jre/guava-32.0.0-jre.jar
+  sha1: 25d6662e20fc04c7b38f8ca3ab5d2f4a19272f80
+- type: file
+  dest: .m2/repository/com/google/guava/guava/32.0.0-jre
+  url: https://repo.maven.apache.org/maven2/com/google/guava/guava/32.0.0-jre/guava-32.0.0-jre.pom
+  sha1: 5fd5b95903dd6a907b4b3bb12ed9924fac139e50
 - type: file
   dest: .m2/repository/com/google/guava/guava-parent/10.0.1
   url: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/10.0.1/guava-parent-10.0.1.pom
@@ -383,6 +395,10 @@
   url: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/31.1-jre/guava-parent-31.1-jre.pom
   sha1: 99dae234b84eeaafa621086b6fff3530fb7e45d3
 - type: file
+  dest: .m2/repository/com/google/guava/guava-parent/32.0.0-jre
+  url: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/32.0.0-jre/guava-parent-32.0.0-jre.pom
+  sha1: 1ed4526fb5dd793c09712bc20555297804083a79
+- type: file
   dest: .m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava
   url: https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
   sha1: b421526c5f297295adef1c886e5246c39d4ac629
@@ -398,6 +414,10 @@
   dest: .m2/repository/com/google/j2objc/j2objc-annotations/1.3
   url: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.pom
   sha1: 47e0dd93285dcc6b33181713bc7e8aed66742964
+- type: file
+  dest: .m2/repository/com/google/j2objc/j2objc-annotations/2.8
+  url: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.pom
+  sha1: c8daacea97066c6826844e2175ec89857e598122
 - type: file
   dest: .m2/repository/com/google/jimfs/jimfs/1.2
   url: https://repo.maven.apache.org/maven2/com/google/jimfs/jimfs/1.2/jimfs-1.2.jar
@@ -1959,6 +1979,10 @@
   url: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.pom
   sha1: fb8dca6f40fcb30f7b89de269940bf3316fb9845
 - type: file
+  dest: .m2/repository/org/checkerframework/checker-qual/3.33.0
+  url: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.pom
+  sha1: 6d43e2eacef053cffd73da56734e9a8a138b52be
+- type: file
   dest: .m2/repository/org/codehaus/mojo/license-maven-plugin/2.0.0
   url: https://repo.maven.apache.org/maven2/org/codehaus/mojo/license-maven-plugin/2.0.0/license-maven-plugin-2.0.0.jar
   sha1: 88cced1fc683bf9c2a53ddbc6531590ec5ac32d4
@@ -2399,13 +2423,13 @@
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.pom
   sha1: ed912aed85e5225ef3dda9a9cd2acaa0a08c643b
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.4
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.4/cryptofs-2.6.4.jar
-  sha1: 19cd43363bed251690215b5b6b241dbabd2c39c1
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.5
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.5/cryptofs-2.6.5.jar
+  sha1: 8b897124dfbab5d275a0bfa78a6473fe645d38a6
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.4
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.4/cryptofs-2.6.4.pom
-  sha1: b5dd5b11639071108cd500a53c5af761ed7949d7
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.5
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.5/cryptofs-2.6.5.pom
+  sha1: c2b76bc1861e4c951085e501cfd4c8b30af9c918
 - type: file
   dest: .m2/repository/org/cryptomator/cryptolib/2.1.2
   url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.2/cryptolib-2.1.2.jar
