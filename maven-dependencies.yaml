@@ -783,10 +783,6 @@
   url: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
   sha1: a5f679b14bb06a3cb3769eb04e228c8b9e12908f
 - type: file
-  dest: .m2/repository/org/apache/apache/10
-  url: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
-  sha1: 48296e511366fa13aad48c58d8e09721774abec6
-- type: file
   dest: .m2/repository/org/apache/apache/13
   url: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
   sha1: 15aff1faaec4963617f07dbe8e603f0adabc3a12
@@ -1235,10 +1231,6 @@
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.5/maven-2.0.5.pom
   sha1: 9801e4423479367099ad4507c51c4f7f5b19bc6f
 - type: file
-  dest: .m2/repository/org/apache/maven/maven/2.0.6
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
-  sha1: 1991be0ed3e1820e135201406d5acabf8c08d426
-- type: file
   dest: .m2/repository/org/apache/maven/maven/3.0
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom
   sha1: 30c961aaf964aadcc028102ebe03d1afff324ec0
@@ -1439,10 +1431,6 @@
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
   sha1: 00fed95187c0c9bfd13c08a858cb6f00245a3fa9
 - type: file
-  dest: .m2/repository/org/apache/maven/maven-parent/21
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
-  sha1: 0ecebf1043d9c7bdd3d32a4184ad4ef9ad3ea744
-- type: file
   dest: .m2/repository/org/apache/maven/maven-parent/23
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
   sha1: f92ae4baba6616609a29f6287626ee3f50ed7d6e
@@ -1482,14 +1470,6 @@
   dest: .m2/repository/org/apache/maven/maven-parent/37
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/37/maven-parent-37.pom
   sha1: 4dea31650e71386d7c41da8806ef4c87ef8de0b1
-- type: file
-  dest: .m2/repository/org/apache/maven/maven-plugin-api/2.0.6
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
-  sha1: 52b32fd980c8ead7a3858d057330bda1ace72d9d
-- type: file
-  dest: .m2/repository/org/apache/maven/maven-plugin-api/2.0.6
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
-  sha1: 3af72b052dfefb73ecfae742613012b5396c8863
 - type: file
   dest: .m2/repository/org/apache/maven/maven-plugin-api/3.0
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar
@@ -1603,13 +1583,13 @@
   url: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.2.5/maven-settings-builder-3.2.5.pom
   sha1: d8568e9f65a25d19ed12046ed51207d8b2777767
 - type: file
-  dest: .m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.5
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
-  sha1: 75653decaefa85ca8114ff3a4f869bb2ee6d605d
+  dest: .m2/repository/org/apache/maven/plugins/maven-clean-plugin/3.2.0
+  url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar
+  sha1: 556f5c71be8788c70a94a43d66af7fe35acee21f
 - type: file
-  dest: .m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.5
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
-  sha1: 8571a1cd21bed4fe28656c3303526fa7d1e582ad
+  dest: .m2/repository/org/apache/maven/plugins/maven-clean-plugin/3.2.0
+  url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom
+  sha1: f6f7ce25e8d638408c20f1888b2664f49df9f5a1
 - type: file
   dest: .m2/repository/org/apache/maven/plugins/maven-compiler-plugin/3.10.1
   url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.10.1/maven-compiler-plugin-3.10.1.jar
@@ -1634,10 +1614,6 @@
   dest: .m2/repository/org/apache/maven/plugins/maven-jar-plugin/3.3.0
   url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.3.0/maven-jar-plugin-3.3.0.pom
   sha1: d050305435cae1e07d275801732343f1283f4abf
-- type: file
-  dest: .m2/repository/org/apache/maven/plugins/maven-plugins/22
-  url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
-  sha1: beff44ae4eff1e5c79c01972083cd11fa6982462
 - type: file
   dest: .m2/repository/org/apache/maven/plugins/maven-plugins/34
   url: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom
@@ -2362,14 +2338,6 @@
   dest: .m2/repository/org/codehaus/plexus/plexus-utils/2.0.5
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
   sha1: 51785edd83de609389ba142c9516752a4246aefc
-- type: file
-  dest: .m2/repository/org/codehaus/plexus/plexus-utils/3.0
-  url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
-  sha1: d63aa0daf60d573bada235e2b4207617dcf24959
-- type: file
-  dest: .m2/repository/org/codehaus/plexus/plexus-utils/3.0
-  url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
-  sha1: fe3d8457b0cf4e219fd8e3edad5054b8e38f17b0
 - type: file
   dest: .m2/repository/org/codehaus/plexus/plexus-utils/3.0.20
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
@@ -3378,10 +3346,6 @@
   dest: .m2/repository/org/sonatype/spice/spice-parent/15
   url: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
   sha1: 3cfa1d1f3113a8137fdc7b7a67f310abbed4a22d
-- type: file
-  dest: .m2/repository/org/sonatype/spice/spice-parent/16
-  url: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
-  sha1: aefd3135046b7c3f5835283bcc3b670fc46692b9
 - type: file
   dest: .m2/repository/org/sonatype/spice/spice-parent/17
   url: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
