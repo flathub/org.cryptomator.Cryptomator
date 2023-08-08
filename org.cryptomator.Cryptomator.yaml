@@ -159,6 +159,6 @@ modules:
         sha512: 143a956096d3a1f535c423fc43a0a804f029ca1132dd92a0deb116f1e4544f08cfb0b33f7bf88e4842ab2f6fb66e18f225ef870e465c69cac41d40151c399423
         dest-filename: openjfx.zip
       - type: file
-        url: http://archive.apache.org/dist/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
-        sha512: f790857f3b1f90ae8d16281f902c689e4f136ebe584aba45e4b1fa66c80cba826d3e0e52fdd04ed44b4c66f6d3fe3584a057c26dfcac544a60b301e6d0f91c26
+        url: https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
+        sha512: deaa39e16b2cf20f8cd7d232a1306344f04020e1f0fb28d35492606f647a60fe729cc40d3cba33e093a17aed41bd161fe1240556d0f1b80e773abd408686217e
         dest-filename: maven.tar.gz
