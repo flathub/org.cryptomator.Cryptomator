@@ -1,7 +1,7 @@
 - type: file
   dest: .m2/repository/org/openjfx/javafx-base/20.0.2
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/20.0.2/javafx-base-20.0.2-linux-aarch64.jar
-  sha1: 24a35bebb8206c6015db7e0f67b0de4b49d34d27
+  sha1: e78639b71b652fb1a2026162605ec56b7503e3d1
   only-arches:
     - aarch64
 - type: file
