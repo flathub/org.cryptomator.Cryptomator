@@ -3,7 +3,6 @@
 .flatpak-builder/
 .idea/
 build/
-shared-modules/
 
 .DS_Store
 Thumbs.db
