@@ -36,10 +36,17 @@ finish-args:
   - --talk-name=org.kde.kwalletd5
   # Needed to talk to the gvfs daemons over D-Bus and list mounts using the GIO APIs
   - --talk-name=org.gtk.vfs.*
+  # Allow access to appindicator icons
+  - --talk-name=org.ayatana
+  # Allow access to appindicator icons on KDE
+  - --talk-name=org.kde.StatusNotifierWatcher
+  # Required for tray icons on KDE
+  - --own-name=org.kde.*
 cleanup:
   - /include
   - /lib/pkgconfig
 modules:
+  - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
   - name: libfuse
     buildsystem: meson
     config-opts:
@@ -73,7 +80,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.9.3
+        VERSION: 1.10.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -91,7 +98,7 @@ modules:
       - $JAVA_HOME/bin/jlink
         --output runtime
         --module-path $JMODS_PATH
-        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.unsupported,jdk.crypto.ec,jdk.security.auth,jdk.accessibility,jdk.management.jfr
+        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.unsupported,jdk.crypto.ec,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net
         --no-header-files
         --no-man-pages
         --strip-debug
@@ -106,34 +113,37 @@ modules:
         --name Cryptomator
         --vendor 'Skymatic GmbH'
         --java-options '--enable-preview'
-        --java-options '--enable-native-access=org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64'
+        --java-options '--enable-native-access=org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
         --copyright '(C) 2016 - 2023 Skymatic GmbH'
         --java-options '-Xss5m'
         --java-options '-Xmx256m'
         --java-options '-Dfile.encoding='utf-8''
-        --java-options '-Dcryptomator.logDir='~/.local/share/Cryptomator/logs''
-        --java-options '-Dcryptomator.settingsPath='~/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
-        --java-options '-Dcryptomator.p12Path='~/.config/Cryptomator/key.p12''
-        --java-options '-Dcryptomator.ipcSocketPath='~/.config/Cryptomator/ipc.socket''
-        --java-options '-Dcryptomator.mountPointsDir='~/.local/share/Cryptomator/mnt''
-        --java-options '-Dcryptomator.pluginDir='~/.local/share/Cryptomator/plugins''
-        --java-options '-Dcryptomator.showTrayIcon=false'
-        --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
+        --java-options '-Djava.net.useSystemProxies=true'
         --java-options "-Dcryptomator.appVersion='${VERSION}'"
+        --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
+        --java-options '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket''
+        --java-options '-Dcryptomator.mountPointsDir='@{userhome}/.local/share/Cryptomator/mnt''
+        --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins''
+        --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12''
+        --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
+        --java-options '-Dcryptomator.showTrayIcon=false'
         --app-version "${VERSION}.${REVISION_NO}"
         --verbose
       - cp -R Cryptomator /app/
       - ln -s /app/Cryptomator/bin/Cryptomator /app/bin/cryptomator
+      - cp -R /app/lib/* /app/Cryptomator/lib/app/
       - install -D -m0644 -t /app/share/applications/ dist/linux/common/org.cryptomator.Cryptomator.desktop
       - install -D -m0644 -t /app/share/icons/hicolor/scalable/apps/ dist/linux/common/org.cryptomator.Cryptomator.svg
+      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-symbolic.svg
+      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
     sources:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 60ffae2dd4021c312530180e36a41e25dbc67689e12a522e8309f60bcae3bee9aebc7d172776116c8693dbc467615c716f70d86039f4934a7d6a81acee9cd33d
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.9.3.tar.gz
+        sha512: 540ae55b967e0269cee45c8188ae3dfcc47c277bc14828db89214faad728747c187165a31af533032f478fae679caa3b92ee25d95080729ab2d12d6a22210817
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.10.0.tar.gz
       - type: file
         only-arches:
           - x86_64
@@ -149,14 +159,14 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/20.0.1/openjfx-20.0.1_linux-x64_bin-jmods.zip
-        sha512: 7f1c62219bd90629b8acbdaf1aa8e39e23b246ec699776375a68275e6f37ca795d4c31c4ac5d2d36758afe2500bfd5dbd91a1a45a1c086b82e2ea604fbcd896b
+        url: https://download2.gluonhq.com/openjfx/20.0.2/openjfx-20.0.2_linux-x64_bin-jmods.zip
+        sha512: c8ff2fdef0acdf4ece736ba1ce01fdac221910aa7972b83b0b5ecc5be841e08df6e087c79bd7ad603eba162b159dd814002b22937383a882c815544dea5e7574
         dest-filename: openjfx.zip
       - type: file
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/20.0.1/openjfx-20.0.1_linux-aarch64_bin-jmods.zip
-        sha512: 143a956096d3a1f535c423fc43a0a804f029ca1132dd92a0deb116f1e4544f08cfb0b33f7bf88e4842ab2f6fb66e18f225ef870e465c69cac41d40151c399423
+        url: https://download2.gluonhq.com/openjfx/20.0.2/openjfx-20.0.2_linux-aarch64_bin-jmods.zip
+        sha512: 1d27d2a34686267043fd56d926bf0a974d617616cc426b1880ca6698bd4277442f2ab67e7544fc14c381294bd1bd6c41204a07df55641df550411ee8636b0df3
         dest-filename: openjfx.zip
       - type: file
         url: https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
