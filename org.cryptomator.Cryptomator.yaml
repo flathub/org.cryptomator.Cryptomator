@@ -80,7 +80,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.10.0
+        VERSION: 1.10.1
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -126,7 +126,8 @@ modules:
         --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins''
         --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12''
         --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
-        --java-options '-Dcryptomator.showTrayIcon=false'
+        --java-options '-Dcryptomator.showTrayIcon=true'
+        --java-options '-Dcryptomator.disableUpdateCheck=true'
         --app-version "${VERSION}.${REVISION_NO}"
         --verbose
       - cp -R Cryptomator /app/
@@ -142,8 +143,8 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 540ae55b967e0269cee45c8188ae3dfcc47c277bc14828db89214faad728747c187165a31af533032f478fae679caa3b92ee25d95080729ab2d12d6a22210817
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.10.0.tar.gz
+        sha512: 2f12d9399a4c2c4b6300ceba4f4f82efb8e1f53ae63eabf81586d390a122ec24cf2f23a2d36ba7fa8f746b8e3adf3e4406a97609d36b8f4d3c3f9a3ae36b27cc
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.10.1.tar.gz
       - type: file
         only-arches:
           - x86_64
