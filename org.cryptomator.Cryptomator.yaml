@@ -40,8 +40,6 @@ finish-args:
   - --talk-name=org.ayatana
   # Allow access to appindicator icons on KDE
   - --talk-name=org.kde.StatusNotifierWatcher
-  # Required for tray icons on KDE
-  - --own-name=org.kde.*
 cleanup:
   - /include
   - /lib/pkgconfig
