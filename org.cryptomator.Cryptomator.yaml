@@ -78,7 +78,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.10.1
+        VERSION: 1.11.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -141,19 +141,19 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 2f12d9399a4c2c4b6300ceba4f4f82efb8e1f53ae63eabf81586d390a122ec24cf2f23a2d36ba7fa8f746b8e3adf3e4406a97609d36b8f4d3c3f9a3ae36b27cc
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.10.1.tar.gz
+        sha512: 655815d17ba78887aad204fe167f168552371b56872384d7477f5029eee4597c455f00eda24edb5f7f1dd320f122aa4c218bcf7e950da6a9451619da84e2addc
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.11.0.tar.gz
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz
-        sha512: 2c8e71e519faaa37fc376e2295a8e2fa7e738c737104c1429c79f642cea6fd61b44171acd8a0856013a0c5de0a68be9abc2e6005e97c5e91c34f9598026b867d
+        url: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz
+        sha512: 496ed15dcba607cd1b9e6786932429f9d213d2ea22203bf8cbed61880655ee046bfc4c07b7b0d54285081ddf242fd8957ba34c8be75f5fb2ae0aac16f9b8ef3a
         dest-filename: jdk.tar.gz
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_linux_hotspot_20.0.2_9.tar.gz
-        sha512: b7533e98a06e5e7816787e7085e1af7394f563c93ae45d1b956640e486645000d83e4db4cae138a8e638351876d9b9688d6db63a3e670620d73cbdf7db24a010
+        url: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz
+        sha512: ed05b9733e8270fe73dab86fb9320689a6613dd2d6a5807a47a2e22f081feefd9729e39521c85f3f443687bd103918850a9bd3a27d1a64b8519bb37c7454e5e8
         dest-filename: jdk.tar.gz
       - type: file
         only-arches:
@@ -168,6 +168,6 @@ modules:
         sha512: 1d27d2a34686267043fd56d926bf0a974d617616cc426b1880ca6698bd4277442f2ab67e7544fc14c381294bd1bd6c41204a07df55641df550411ee8636b0df3
         dest-filename: openjfx.zip
       - type: file
-        url: https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
-        sha512: deaa39e16b2cf20f8cd7d232a1306344f04020e1f0fb28d35492606f647a60fe729cc40d3cba33e093a17aed41bd161fe1240556d0f1b80e773abd408686217e
+        url: https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
+        sha512: 4810523ba025104106567d8a15a8aa19db35068c8c8be19e30b219a1d7e83bcab96124bf86dc424b1cd3c5edba25d69ec0b31751c136f88975d15406cab3842b
         dest-filename: maven.tar.gz
