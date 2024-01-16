@@ -78,7 +78,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.11.1
+        VERSION: 1.12.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -140,9 +140,10 @@ modules:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
+      #TODO
       - type: archive
-        sha512: b3a944aa9c031927372ea626dd884aca4cef646b7df0eca981cee5f07e29ccdee261429a349cd4ccd26ab60a57163a099c4ade7e519d5bf7119ee662639cc136
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.11.1.tar.gz
+        sha512: 655815d17ba78887aad204fe167f168552371b56872384d7477f5029eee4597c455f00eda24edb5f7f1dd320f122aa4c218bcf7e950da6a9451619da84e2addc
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.11.0.tar.gz
       - type: file
         only-arches:
           - x86_64
@@ -158,14 +159,14 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/20.0.2/openjfx-20.0.2_linux-x64_bin-jmods.zip
-        sha512: c8ff2fdef0acdf4ece736ba1ce01fdac221910aa7972b83b0b5ecc5be841e08df6e087c79bd7ad603eba162b159dd814002b22937383a882c815544dea5e7574
+        url: https://download2.gluonhq.com/openjfx/21.0.1/openjfx-21.0.1_linux-x64_bin-jmods.zip
+        sha512: c7e66bf19bd78cdb007d60fa51e4b7da36687bac49bc33493802a1d8d4f45c253f2faae0b5387f77d9421711a8cb9e011f1b65393d7843366797819013e720bf
         dest-filename: openjfx.zip
       - type: file
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/20.0.2/openjfx-20.0.2_linux-aarch64_bin-jmods.zip
-        sha512: 1d27d2a34686267043fd56d926bf0a974d617616cc426b1880ca6698bd4277442f2ab67e7544fc14c381294bd1bd6c41204a07df55641df550411ee8636b0df3
+        url: https://download2.gluonhq.com/openjfx/21.0.1/openjfx-21.0.1_linux-aarch64_bin-jmods.zip
+        sha512: f1f4877586a0dd7ef06b0a07c013a609df5c527c06864cac854a6af634594f9b8736623e78626b966c9d99ed6376a4130de03f80af834a25e16ddbebf4de5cc5
         dest-filename: openjfx.zip
       - type: file
         url: https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
