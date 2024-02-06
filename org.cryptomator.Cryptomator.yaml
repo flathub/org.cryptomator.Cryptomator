@@ -100,7 +100,7 @@ modules:
         --no-header-files
         --no-man-pages
         --strip-debug
-        --compress=1
+        --compress=zip-0
       - $JAVA_HOME/bin/jpackage
         --type app-image
         --runtime-image runtime
@@ -140,10 +140,9 @@ modules:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
-      #TODO
       - type: archive
-        sha512: 655815d17ba78887aad204fe167f168552371b56872384d7477f5029eee4597c455f00eda24edb5f7f1dd320f122aa4c218bcf7e950da6a9451619da84e2addc
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.11.0.tar.gz
+        sha512: ac0543adec1651bb9fb186d613731b98abdc9aa894c60dc796fb20a83d4e3a438dd682493e5fb95d0527153ad3e3f755ac19fc2ec2318552baa31eab4633f22c
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.0.tar.gz
       - type: file
         only-arches:
           - x86_64
