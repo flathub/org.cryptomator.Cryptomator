@@ -125,6 +125,7 @@ modules:
         --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12''
         --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
         --java-options '-Dcryptomator.showTrayIcon=true'
+        --java-options '-Dcryptomator.integrationsLinux.trayIconsDir=\"@{appdir}/usr/share/icons/hicolor/symbolic/apps\"'
         --java-options '-Dcryptomator.disableUpdateCheck=true'
         --app-version "${VERSION}.${REVISION_NO}"
         --verbose
