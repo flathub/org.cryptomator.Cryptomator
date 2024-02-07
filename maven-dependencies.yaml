@@ -2525,7 +2525,7 @@
 - type: file
   dest: .m2/repository/org/cryptomator/integrations-linux/1.4.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.3/integrations-linux-1.4.3.pom
-  sha1: d7af7fa0a1a19ed1f8db4920906c5ea911c89eb5
+  sha1: 131415b280f39278fc4a95ebb6c0ce3dde2d9e01
 - type: file
   dest: .m2/repository/org/cryptomator/jfuse/0.6.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.6.3/jfuse-0.6.3.jar
