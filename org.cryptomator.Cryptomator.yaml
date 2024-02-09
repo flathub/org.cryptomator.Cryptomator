@@ -141,8 +141,8 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 6803f6a29a510c628d5de4a393cb2cca63411055ce8cc7f7590ce8e9fd5c9c5132ff90dcebce675df22f8a5e2b23ee9b4ae7e7c927f5def771ddf09e290b1629 
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.1.tar.gz
+        sha512: ebcaf2d0800513f7d01250a900b2aaeccd043ae6cb8bcbb41cc39ec216c2e996287fe55db5a9fb093cbb3c1504ea44f133c4064e9f1a9a78f054e08f4185ef2d
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.2.tar.gz
       - type: file
         only-arches:
           - x86_64

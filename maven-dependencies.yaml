@@ -2519,13 +2519,13 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.3.0/integrations-api-1.3.0.pom
   sha1: a2977ccfcdfdaa0a364d50ea1d300f888cac4b19
 - type: file
-  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.3/integrations-linux-1.4.3.jar
-  sha1: 246ddedaeca5de9fe9e6b57b233e1af6a37af017
+  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.4
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.4/integrations-linux-1.4.4.jar
+  sha1: 57d49233d4e07bb49b70fc9aea9f623097f0dbc6
 - type: file
-  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.3/integrations-linux-1.4.3.pom
-  sha1: 131415b280f39278fc4a95ebb6c0ce3dde2d9e01
+  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.4
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.4/integrations-linux-1.4.4.pom
+  sha1: a9467b456c0c0f472eada9e059eb9694f8e24d70
 - type: file
   dest: .m2/repository/org/cryptomator/jfuse/0.6.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.6.3/jfuse-0.6.3.jar
