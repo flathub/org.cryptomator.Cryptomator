@@ -167,17 +167,17 @@
   url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-core/4.3.0/dbus-java-core-4.3.0.pom
   sha1: 3bf3ebef81470aff27657cd808be7d9b60ebac1c
 - type: file
-  dest: .m2/repository/com/github/hypfvieh/dbus-java-core/5.0.0
-  url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-core/5.0.0/dbus-java-core-5.0.0.pom
-  sha1: 71f1eedd417ef43a62edc14f592f41ff63c85577
+  dest: .m2/repository/com/github/hypfvieh/dbus-java-core/4.3.1
+  url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-core/4.3.1/dbus-java-core-4.3.1.pom
+  sha1: ed0e6bb67854d010ad78873d4e2b5c76fd62d666
 - type: file
   dest: .m2/repository/com/github/hypfvieh/dbus-java-parent/4.3.0
   url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-parent/4.3.0/dbus-java-parent-4.3.0.pom
   sha1: 67dfb80820f3fe8c6e7460f8c8f0b955aa3a6724
 - type: file
-  dest: .m2/repository/com/github/hypfvieh/dbus-java-parent/5.0.0
-  url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-parent/5.0.0/dbus-java-parent-5.0.0.pom
-  sha1: 51d204552c78c84c9a39109e3ab211c0c3092fc9
+  dest: .m2/repository/com/github/hypfvieh/dbus-java-parent/4.3.1
+  url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-parent/4.3.1/dbus-java-parent-4.3.1.pom
+  sha1: c1c66726375a3da7a51a332ba66ee1b7b2c569c2
 - type: file
   dest: .m2/repository/com/github/hypfvieh/dbus-java-transport-native-unixsocket/4.3.0
   url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-transport-native-unixsocket/4.3.0/dbus-java-transport-native-unixsocket-4.3.0.jar
@@ -187,9 +187,9 @@
   url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-transport-native-unixsocket/4.3.0/dbus-java-transport-native-unixsocket-4.3.0.pom
   sha1: 731f2fa96236f0b37cfdfd6bc9c3a01bd225b4ab
 - type: file
-  dest: .m2/repository/com/github/hypfvieh/dbus-java-transport-native-unixsocket/5.0.0
-  url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-transport-native-unixsocket/5.0.0/dbus-java-transport-native-unixsocket-5.0.0.pom
-  sha1: 4890994bda1feaa404145aa0f49d004412650804
+  dest: .m2/repository/com/github/hypfvieh/dbus-java-transport-native-unixsocket/4.3.1
+  url: https://repo.maven.apache.org/maven2/com/github/hypfvieh/dbus-java-transport-native-unixsocket/4.3.1/dbus-java-transport-native-unixsocket-4.3.1.pom
+  sha1: d1efd1266d6a782652502965333720f0ba7fa150
 - type: file
   dest: .m2/repository/com/github/luben/zstd-jni/1.5.5-5
   url: https://repo.maven.apache.org/maven2/com/github/luben/zstd-jni/1.5.5-5/zstd-jni-1.5.5-5.jar
@@ -2519,13 +2519,13 @@
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.3.0/integrations-api-1.3.0.pom
   sha1: a2977ccfcdfdaa0a364d50ea1d300f888cac4b19
 - type: file
-  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.3/integrations-linux-1.4.3.jar
-  sha1: 246ddedaeca5de9fe9e6b57b233e1af6a37af017
+  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.4
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.4/integrations-linux-1.4.4.jar
+  sha1: 57d49233d4e07bb49b70fc9aea9f623097f0dbc6
 - type: file
-  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.3
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.3/integrations-linux-1.4.3.pom
-  sha1: 131415b280f39278fc4a95ebb6c0ce3dde2d9e01
+  dest: .m2/repository/org/cryptomator/integrations-linux/1.4.4
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.4/integrations-linux-1.4.4.pom
+  sha1: a9467b456c0c0f472eada9e059eb9694f8e24d70
 - type: file
   dest: .m2/repository/org/cryptomator/jfuse/0.6.3
   url: https://repo.maven.apache.org/maven2/org/cryptomator/jfuse/0.6.3/jfuse-0.6.3.jar
@@ -3199,13 +3199,13 @@
   url: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom
   sha1: bda66fa5f1b68fa7d2de3d569bdc8508b2af82d4
 - type: file
-  dest: .m2/repository/org/purejava/kdewallet/1.5.0
-  url: https://repo.maven.apache.org/maven2/org/purejava/kdewallet/1.5.0/kdewallet-1.5.0.jar
-  sha1: d005f36e54159aa5568755f33730f491d78479a1
+  dest: .m2/repository/org/purejava/kdewallet/1.4.0
+  url: https://repo.maven.apache.org/maven2/org/purejava/kdewallet/1.4.0/kdewallet-1.4.0.jar
+  sha1: bd7c21dc345681bf45b908c75f2acc03f1019805
 - type: file
-  dest: .m2/repository/org/purejava/kdewallet/1.5.0
-  url: https://repo.maven.apache.org/maven2/org/purejava/kdewallet/1.5.0/kdewallet-1.5.0.pom
-  sha1: c4b2b976a1bf636136370979fda63e92adebd4d1
+  dest: .m2/repository/org/purejava/kdewallet/1.4.0
+  url: https://repo.maven.apache.org/maven2/org/purejava/kdewallet/1.4.0/kdewallet-1.4.0.pom
+  sha1: 5e1fa1e4037f9982bb1cdbe18afff501a9753a98
 - type: file
   dest: .m2/repository/org/purejava/libappindicator-gtk3-java-minimal/1.3.6
   url: https://repo.maven.apache.org/maven2/org/purejava/libappindicator-gtk3-java-minimal/1.3.6/libappindicator-gtk3-java-minimal-1.3.6.jar
