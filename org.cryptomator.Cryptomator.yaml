@@ -78,7 +78,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.12.1
+        VERSION: 1.12.2
         REVISION_NO: '1'
     build-commands:
       # Setup Java
