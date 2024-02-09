@@ -5,8 +5,8 @@ runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 finish-args:
-  # OpenGL rendering
-  - --device=dri
+  # Required for FUSE, see https://github.com/flathub/org.cryptomator.Cryptomator/pull/68#issuecomment-1935136502
+  - --device=all
   # Set the PATH environment variable in the application, as flatpak is resetting the shell's PATH
   - --env=PATH=/app/bin/:/usr/bin/
   # Allow filesystem access to the user's home dir
@@ -56,8 +56,8 @@ modules:
       - -Dudevrulesdir=/tmp/
     sources:
       - type: archive
-        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.14.1/fuse-3.14.1.tar.xz
-        sha256: 126919d72b46b3e0eb58a9c6933a2a50c36f2ea69f61fe9e78bdba9f463ffa20
+        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
+        sha256: f797055d9296b275e981f5f62d4e32e089614fc253d1ef2985851025b8a0ce87
         x-checker-data:
           type: anitya
           project-id: 861
