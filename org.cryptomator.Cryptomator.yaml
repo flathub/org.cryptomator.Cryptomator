@@ -5,8 +5,8 @@ runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 finish-args:
-  # OpenGL rendering
-  - --device=dri
+  # Required for FUSE, see https://github.com/flathub/org.cryptomator.Cryptomator/pull/68#issuecomment-1935136502
+  - --device=all
   # Set the PATH environment variable in the application, as flatpak is resetting the shell's PATH
   - --env=PATH=/app/bin/:/usr/bin/
   # Allow filesystem access to the user's home dir
