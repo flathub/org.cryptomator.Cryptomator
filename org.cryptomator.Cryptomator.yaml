@@ -78,7 +78,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.12.2
+        VERSION: 1.12.3
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -90,7 +90,6 @@ modules:
       - tar xf maven.tar.gz --strip-components=1 --exclude=jansi-native --directory=maven
       # Build project
       - maven/bin/mvn clean package -DskipTests -Plinux
-      - cp dist/linux/launcher* target
       - cp target/cryptomator-*.jar target/mods
       - cd target
       - $JAVA_HOME/bin/jlink
@@ -141,8 +140,8 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: ebcaf2d0800513f7d01250a900b2aaeccd043ae6cb8bcbb41cc39ec216c2e996287fe55db5a9fb093cbb3c1504ea44f133c4064e9f1a9a78f054e08f4185ef2d
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.2.tar.gz
+        sha512: 55706d6b39ee4046a3c839f5efe908035ab31cf9acff2f6e669a689f46fcbf0ed5b85d28d8499a8e96562a121edc1c2e5935ed73d612643c868319fd65e1fa93
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.3.tar.gz
       - type: file
         only-arches:
           - x86_64
