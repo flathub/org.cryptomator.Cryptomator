@@ -35,25 +35,25 @@
   url: https://repo.maven.apache.org/maven2/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom
   sha1: 853c9df18e44caf0bab1eab8be0d482f9ec9bcd7
 - type: file
-  dest: .m2/repository/ch/qos/logback/logback-classic/1.4.14
-  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar
-  sha1: d98bc162275134cdf1518774da4a2a17ef6fb94d
+  dest: .m2/repository/ch/qos/logback/logback-classic/1.5.0
+  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.5.0/logback-classic-1.5.0.jar
+  sha1: d1d041eb97fe363b868ea6794ec93e6c96f83d29
 - type: file
-  dest: .m2/repository/ch/qos/logback/logback-classic/1.4.14
-  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.pom
-  sha1: fdd499ceb0bb00612813ac5b16c6329d937086c1
+  dest: .m2/repository/ch/qos/logback/logback-classic/1.5.0
+  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.5.0/logback-classic-1.5.0.pom
+  sha1: f73b4c0677d1cb685af4ef71cf39343df57f0dfa
 - type: file
-  dest: .m2/repository/ch/qos/logback/logback-core/1.4.14
-  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar
-  sha1: 4d3c2248219ac0effeb380ed4c5280a80bf395e8
+  dest: .m2/repository/ch/qos/logback/logback-core/1.5.0
+  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.5.0/logback-core-1.5.0.jar
+  sha1: ac245eb4d95f57bbda4d3fff71a707ecfedfa3ef
 - type: file
-  dest: .m2/repository/ch/qos/logback/logback-core/1.4.14
-  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.pom
-  sha1: 4b0d34f8f4ffa62296b14d0beba3dd92d3df324c
+  dest: .m2/repository/ch/qos/logback/logback-core/1.5.0
+  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.5.0/logback-core-1.5.0.pom
+  sha1: beaf320308c461923d752b0f2aa3fcc226c523d0
 - type: file
-  dest: .m2/repository/ch/qos/logback/logback-parent/1.4.14
-  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.4.14/logback-parent-1.4.14.pom
-  sha1: 9f4f6d81eaa879854903c20f0d436e7057d400b1
+  dest: .m2/repository/ch/qos/logback/logback-parent/1.5.0
+  url: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.5.0/logback-parent-1.5.0.pom
+  sha1: 9350a2840a1919d44b1f7f2650c09a904c0f9c91
 - type: file
   dest: .m2/repository/com/auth0/java-jwt/4.4.0
   url: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/4.4.0/java-jwt-4.4.0.jar
@@ -247,9 +247,9 @@
   url: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom
   sha1: 292197f3cb1ebc0dd03e20897e4250b265177286
 - type: file
-  dest: .m2/repository/com/google/dagger/dagger/2.48.1
-  url: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.48.1/dagger-2.48.1.pom
-  sha1: 4edb4c692a836ad11b3f92ecdb4f25b7e5ece008
+  dest: .m2/repository/com/google/dagger/dagger/2.49
+  url: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.49/dagger-2.49.pom
+  sha1: 837e0b3ab124ba4f126a7f88d852040974b917ad
 - type: file
   dest: .m2/repository/com/google/dagger/dagger/2.50
   url: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.50/dagger-2.50.jar
@@ -2475,13 +2475,13 @@
   url: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.pom
   sha1: f94a34d43206e704670533b74feb981b8de56640
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.8
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.8/cryptofs-2.6.8.jar
-  sha1: 9e82d12c0451690ca361d4e2ab71a6b407901167
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.9
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.9/cryptofs-2.6.9.jar
+  sha1: be39579051dd0ddd23372f070ef32c2c863b3da1
 - type: file
-  dest: .m2/repository/org/cryptomator/cryptofs/2.6.8
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.8/cryptofs-2.6.8.pom
-  sha1: 3adae1778233761c2df4f822787826def2f85fbd
+  dest: .m2/repository/org/cryptomator/cryptofs/2.6.9
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptofs/2.6.9/cryptofs-2.6.9.pom
+  sha1: b01127f28ae58c6c984990473ced1674aa8b9798
 - type: file
   dest: .m2/repository/org/cryptomator/cryptolib/2.1.2
   url: https://repo.maven.apache.org/maven2/org/cryptomator/cryptolib/2.1.2/cryptolib-2.1.2.jar
@@ -2512,12 +2512,16 @@
   sha1: 4651527c6cf9c7cfa886e3abd4601f55d597a391
 - type: file
   dest: .m2/repository/org/cryptomator/integrations-api/1.3.0
-  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.3.0/integrations-api-1.3.0.jar
-  sha1: 8d94b91913bad82fe099851ea32539c4db55fb7a
-- type: file
-  dest: .m2/repository/org/cryptomator/integrations-api/1.3.0
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.3.0/integrations-api-1.3.0.pom
   sha1: a2977ccfcdfdaa0a364d50ea1d300f888cac4b19
+- type: file
+  dest: .m2/repository/org/cryptomator/integrations-api/1.3.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.3.1/integrations-api-1.3.1.jar
+  sha1: be5cc661b56b3b4352bd57a6c3c8261dfb35b535
+- type: file
+  dest: .m2/repository/org/cryptomator/integrations-api/1.3.1
+  url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-api/1.3.1/integrations-api-1.3.1.pom
+  sha1: de2f2d7e97eb62906326d97e03cb28769a1332cc
 - type: file
   dest: .m2/repository/org/cryptomator/integrations-linux/1.4.4
   url: https://repo.maven.apache.org/maven2/org/cryptomator/integrations-linux/1.4.4/integrations-linux-1.4.4.jar
@@ -3244,12 +3248,16 @@
   sha1: 96a47b716e8241bca75562533e3a9fbb7ffbefb9
 - type: file
   dest: .m2/repository/org/slf4j/slf4j-api/2.0.11
-  url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar
-  sha1: ad96c3f8cf895e696dd35c2bc8e8ebe710be9e6d
-- type: file
-  dest: .m2/repository/org/slf4j/slf4j-api/2.0.11
   url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.pom
   sha1: b98eed93875ae8db0bfa7e22cb935a3353fecb1a
+- type: file
+  dest: .m2/repository/org/slf4j/slf4j-api/2.0.12
+  url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar
+  sha1: 48f109a2a6d8f446c794f3e3fa0d86df0cdfa312
+- type: file
+  dest: .m2/repository/org/slf4j/slf4j-api/2.0.12
+  url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.pom
+  sha1: 783d7a1b137f9a6381a64be951f6690edfedd272
 - type: file
   dest: .m2/repository/org/slf4j/slf4j-bom/2.0.9
   url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.9/slf4j-bom-2.0.9.pom
@@ -3258,6 +3266,10 @@
   dest: .m2/repository/org/slf4j/slf4j-bom/2.0.11
   url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.11/slf4j-bom-2.0.11.pom
   sha1: ab12ac4635b0798eefc3dcd1a70390e98c8eafb9
+- type: file
+  dest: .m2/repository/org/slf4j/slf4j-bom/2.0.12
+  url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.12/slf4j-bom-2.0.12.pom
+  sha1: 37bd8495310071046ab2f99089e5916e7f232bee
 - type: file
   dest: .m2/repository/org/slf4j/slf4j-log4j12/1.6.4
   url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.pom
@@ -3294,6 +3306,10 @@
   dest: .m2/repository/org/slf4j/slf4j-parent/2.0.11
   url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.11/slf4j-parent-2.0.11.pom
   sha1: 84e06a898a0870120c0d2052e2901ef2927e7c37
+- type: file
+  dest: .m2/repository/org/slf4j/slf4j-parent/2.0.12
+  url: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.12/slf4j-parent-2.0.12.pom
+  sha1: 0aab73e5abb885992de4cdc2a532c61a08aaf783
 - type: file
   dest: .m2/repository/org/sonatype/aether/aether-api/1.7
   url: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
