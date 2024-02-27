@@ -140,7 +140,7 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 55706d6b39ee4046a3c839f5efe908035ab31cf9acff2f6e669a689f46fcbf0ed5b85d28d8499a8e96562a121edc1c2e5935ed73d612643c868319fd65e1fa93
+        sha512: 55706d6b39ee4046a3c839f5efe908035ab31cf9acff2f6e669a689f46fcbf0ed5b85d28d8499a8e96562a121edc1c2e5935ed73d612643c868319fd65e1fa93 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
         url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.3.tar.gz
       - type: file
         only-arches:
