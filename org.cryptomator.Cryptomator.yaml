@@ -78,7 +78,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.12.3
+        VERSION: 1.13.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -140,31 +140,31 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 55706d6b39ee4046a3c839f5efe908035ab31cf9acff2f6e669a689f46fcbf0ed5b85d28d8499a8e96562a121edc1c2e5935ed73d612643c868319fd65e1fa93 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.12.3.tar.gz
+        sha512: 98a0c502d83434e92cdf8067d784983317657c28de1af36e84212a9b929e91f7f16a139fb8f97335e0f53d537ee873cb8f1a3e5aeba4329d457f917283193a1e #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.13.0-beta1.tar.gz
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz
-        sha512: 691ec4d447933c59696944cdb5d5de86fc1332b2c730dc6624f546c0d30456cb3583d53f38d7531f69195e807092c1d03d923d73d5e6883185cae935db1ed7ce
+        url: https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jdk_x64_linux_hotspot_22.0.1_8.tar.gz
+        sha512: 2f9cb8e6ab5c9097ad0d9dc482d913aa3de5d4b9f0868bfc909b3e799a4b4d07b045fb46cd94067ed608a0a925edb30e5d81a9cf2bf9cad6a6bb1564c4ee9c11
         dest-filename: jdk.tar.gz
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.2_13.tar.gz
-        sha512: a41a31915ea64cbdae4e9b81057df579d8456a5ca5e224497e862dbb207275f9d84dd91d9c9cce4d81b03d21d3d4305e3276d064ec1e32b6d1f272f157c82f56
+        url: https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jdk_aarch64_linux_hotspot_22.0.1_8.tar.gz
+        sha512: efbeb6dedcd13450c31ee0899cc8e6a9ece372b3bb781442129595cf5d8353816287f8712b84f5294aaf0bef2fc0453568ed2953c739e4e50b7a4460aa3cf33f
         dest-filename: jdk.tar.gz
       - type: file
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/21.0.1/openjfx-21.0.1_linux-x64_bin-jmods.zip
-        sha512: c7e66bf19bd78cdb007d60fa51e4b7da36687bac49bc33493802a1d8d4f45c253f2faae0b5387f77d9421711a8cb9e011f1b65393d7843366797819013e720bf
+        url: https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_linux-x64_bin-jmods.zip
+        sha512: 13d5f46689180496484660274b1bf6e7d13dc64986be72d300f757bc46b730c2800f2c85dc688e74f0a39d83e1140ab10d2bb1297459228073e9701b72aea385
         dest-filename: openjfx.zip
       - type: file
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/21.0.1/openjfx-21.0.1_linux-aarch64_bin-jmods.zip
-        sha512: f1f4877586a0dd7ef06b0a07c013a609df5c527c06864cac854a6af634594f9b8736623e78626b966c9d99ed6376a4130de03f80af834a25e16ddbebf4de5cc5
+        url: https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_linux-aarch64_bin-jmods.zip
+        sha512: 82aaeaaa421e0529979908a321cd3c9ab8412247b2f493f1e09063a978848ad104331cb8213f3e1d440eacb01154088caabcdea5a32e4952c83edc6da4cbbedb
         dest-filename: openjfx.zip
       - type: file
         url: https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
