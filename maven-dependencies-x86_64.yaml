@@ -1,7 +1,7 @@
 - type: file
   dest: .m2/repository/org/openjfx/javafx-base/22.0.2
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/22.0.2/javafx-base-22.0.2-linux.jar
-  sha1: 
+  sha1: 0c831bf8045cac41e9501454e658e61a1bdc1f3e
   only-arches:
     - x86_64
 - type: file

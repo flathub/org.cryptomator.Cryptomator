@@ -125,8 +125,6 @@ modules:
         --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
         --java-options '-Dcryptomator.showTrayIcon=true'
         --java-options '-Dcryptomator.disableUpdateCheck=true'
-        --java-options "-Dcryptomator.integrationsLinux.autoStartCmd='flatpak run org.cryptomator.Cryptomator'" #TODO: test
-
         --app-version "${VERSION}.${REVISION_NO}"
         --verbose
       - cp -R Cryptomator /app/
