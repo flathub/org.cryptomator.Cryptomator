@@ -1,30 +1,30 @@
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-base/22.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/22.0.1/javafx-base-22.0.1-linux-aarch64.jar
-  sha1: dc98243251b8f73238e7dabf9effb77a75b06fc6
+  dest: .m2/repository/org/openjfx/javafx-base/22.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/22.0.2/javafx-base-22.0.2-linux-aarch64.jar
+  sha1: 87652b5069e97b488058450586ba29c7acf6208a
   only-arches:
     - aarch64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-controls/22.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/22.0.1/javafx-controls-22.0.1-linux-aarch64.jar
-  sha1: 18ba15bcf8d7afb9f39fb4714f4986e5d9c90176
+  dest: .m2/repository/org/openjfx/javafx-controls/22.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/22.0.2/javafx-controls-22.0.2-linux-aarch64.jar
+  sha1: 379031448fffd870bc2d36a2898702d7c642ddc3
   only-arches:
     - aarch64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-fxml/22.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/22.0.1/javafx-fxml-22.0.1-linux-aarch64.jar
-  sha1: c4f18553a33dfef4fae65732e44c5a199b5a3ebd
+  dest: .m2/repository/org/openjfx/javafx-fxml/22.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/22.0.2/javafx-fxml-22.0.2-linux-aarch64.jar
+  sha1: 2235e2d20c7616ddb4015bc58a32fbd564714f48
   only-arches:
     - aarch64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-graphics/22.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/22.0.1/javafx-graphics-22.0.1-linux-aarch64.jar
-  sha1: 277b402c5beae17b975b63f3cf142ac0de441f5f
+  dest: .m2/repository/org/openjfx/javafx-graphics/22.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/22.0.2/javafx-graphics-22.0.2-linux-aarch64.jar
+  sha1: 4298fee56400e286cbb7282594fd4c5f79104da3
   only-arches:
     - aarch64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-swing/22.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/22.0.1/javafx-swing-22.0.1-linux-aarch64.jar
-  sha1: f7f34073d69d5d5a176e2a82ec947b9a50a0d56d
+  dest: .m2/repository/org/openjfx/javafx-swing/22.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/22.0.2/javafx-swing-22.0.2-linux-aarch64.jar
+  sha1: 4c7dc7e14b8f16dadb4d4daa802ca77afeab5ef2
   only-arches:
     - aarch64
