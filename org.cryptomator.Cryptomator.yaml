@@ -139,10 +139,9 @@ modules:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
-      ##TODO: use stable version
       - type: archive
-        sha512: ff4d5d23d7fea3d9ad0b1b26db3a985b59dcc9af66b8cb3a614cedd2a657218b600c9573c88e60b43f9c4770ec75826e30bab95840f19384e4dacb2e08080ce9 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.14.0-beta2.tar.gz
+        sha512: 168d875f3ff3e258469fffc9f5be228120f8c0e93f823b299142c72853d378143f254051695c7ac2790c48adab512aef5e81667c189d898b1daff6ff34567498 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.14.0.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
