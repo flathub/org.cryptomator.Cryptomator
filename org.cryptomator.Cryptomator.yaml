@@ -16,6 +16,9 @@ finish-args:
   # Needed to connect to KeePassXC's UNIX domain socket
   - --filesystem=xdg-run/org.keepassxc.KeePassXC.BrowserServer
   - --filesystem=xdg-run/app/org.keepassxc.KeePassXC/
+  # Allow filesystem access to standard mountpoint /run/media
+  # Needed to manage vaults on external drives
+  - --filesystem=/run/media
   # Share IPC namespace with the host, without it the X11 shared memory extension will not work
   - --share=ipc
   # Allow access to the network
