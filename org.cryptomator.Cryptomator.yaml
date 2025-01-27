@@ -12,6 +12,8 @@ finish-args:
   # Allow filesystem access to the user's home dir
   # Needed to manage vaults there
   - --filesystem=home
+  # Reading system certificates
+  - --filesystem=host-etc:ro
   # Allow access to the XDG data directory
   # Needed to connect to KeePassXC's UNIX domain socket
   - --filesystem=xdg-run/org.keepassxc.KeePassXC.BrowserServer
@@ -124,6 +126,7 @@ modules:
         --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
         --java-options '-Dcryptomator.showTrayIcon=true'
         --java-options '-Dcryptomator.disableUpdateCheck=true'
+        --java-options '-Dcryptomator.networking.truststore.p12Path='/run/host/etc/cryptomator/certs.p12''
         --app-version "${VERSION}.${REVISION_NO}"
         --verbose
       - cp -R Cryptomator /app/
