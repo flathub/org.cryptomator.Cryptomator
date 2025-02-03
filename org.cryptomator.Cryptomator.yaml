@@ -78,7 +78,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.14.2
+        VERSION: 1.15.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -140,8 +140,8 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 3d6e76d090499722c92a08bdb793acef58e68647079763f7beaff9ee5afb757086dc22c21d706159b16430db4b4b917e121a5d35774bacb99806c3c79962b543 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.14.2.tar.gz
+        sha512: 79ab04c2804caad5b8993b4ffb5dfd395fc71bb8cc31d00968dc78a120e057cc2ca46309a879a8c7e17575d7fcce8a690bd590cf903700f4e292177080f42ded #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.15.0.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
