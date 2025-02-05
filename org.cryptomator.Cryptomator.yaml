@@ -81,7 +81,6 @@ modules:
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
         VERSION: 1.15.1
-        VERSION: 1.15.1
         REVISION_NO: '1'
     build-commands:
       # Setup Java
