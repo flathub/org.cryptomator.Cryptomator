@@ -120,6 +120,7 @@ modules:
         --java-options "-Dcryptomator.appVersion='${VERSION}'"
         --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
         --java-options '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket''
+        --java-options '-Dcryptomator.logDir='@{userhome}/.local/share/Cryptomator/logs''
         --java-options '-Dcryptomator.mountPointsDir='@{userhome}/.local/share/Cryptomator/mnt''
         --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins''
         --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12''
