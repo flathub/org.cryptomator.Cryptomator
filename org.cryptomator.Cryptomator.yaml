@@ -80,7 +80,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.15.1
+        VERSION: 1.15.3
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -137,15 +137,15 @@ modules:
       - install -D -m0644 -t /app/share/icons/hicolor/scalable/apps/ dist/linux/common/org.cryptomator.Cryptomator.svg
       - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-symbolic.svg
       - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
-      - sed -i 's/MainWindowUnlock_dark.png/MainWindowUnlocked_dark.png/g' dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml #patch metainfo file with correct screenshot
+      - sed -i 's/MainWindowUnlock_dark.png/MainWindowUnlocked_dark.png/g' dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml #TODO: remove with 1.16.0 release; patches metainfo file with correct screenshot
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
     sources:
       - maven-dependencies.yaml
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 7a44aac6eedd2825d41bb4bdb1fe7185fe543790914afcaad14925ce7b8003193f6965164958c17c3748a9c641cd49ea3cfed9a80ec9daac4413dc9bdb46b974 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.15.1.tar.gz
+        sha512: 2b8f20aa3d93878765c68fe12bc4a63321d655111429c781fd752be18a4333366bf29c8a3c0ec4446ae86b8dfcef9b831791a92917eb815160d55b37867a989c #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.15.3.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
