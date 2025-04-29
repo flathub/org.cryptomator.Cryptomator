@@ -1,30 +1,30 @@
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-base/23.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1-linux.jar
-  sha1: 246d04b3afdfeed41b3e189395a84fe2f7683252
+  dest: .m2/repository/org/openjfx/javafx-base/23.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/23.0.2/javafx-base-23.0.2-linux.jar
+  sha1: 3491430b720983619f03afd204cf43ed933244c2
   only-arches:
-    - x86_64
+  - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-controls/23.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1-linux.jar
-  sha1: a273eeee18ee8dacdaff3ee8b000e6d06482aca1
+  dest: .m2/repository/org/openjfx/javafx-controls/23.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/23.0.2/javafx-controls-23.0.2-linux.jar
+  sha1: f6c2f4dd5a72e0338876b45c32aab93218fac644
   only-arches:
-    - x86_64
+  - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-fxml/23.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/23.0.1/javafx-fxml-23.0.1-linux.jar
-  sha1: 3377c64ae78e2f3c11d50811417c55224496bd62
+  dest: .m2/repository/org/openjfx/javafx-fxml/23.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/23.0.2/javafx-fxml-23.0.2-linux.jar
+  sha1: 948829c1e48ba893e07efaa9885016f792ca118b
   only-arches:
-    - x86_64
+  - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-graphics/23.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1-linux.jar
-  sha1: 1aec48242b851784ed138d2c95e6accb8715760f
+  dest: .m2/repository/org/openjfx/javafx-graphics/23.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/23.0.2/javafx-graphics-23.0.2-linux.jar
+  sha1: 4b8f3472efec5d300ab49777ba2092276667aaa6
   only-arches:
-    - x86_64
+  - x86_64
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-swing/23.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/23.0.1/javafx-swing-23.0.1-linux.jar
-  sha1: 6b743f9f858aea1b5464723b831db30b2aca05f4
+  dest: .m2/repository/org/openjfx/javafx-swing/23.0.2
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/23.0.2/javafx-swing-23.0.2-linux.jar
+  sha1: 9d1d677fdd6287320440abf25eabf9cdc9c9b6f5
   only-arches:
-    - x86_64
+  - x86_64
