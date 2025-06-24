@@ -111,8 +111,9 @@ modules:
         --dest .
         --name Cryptomator
         --vendor 'Skymatic GmbH'
-        --java-options '--enable-native-access=org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
         --copyright '(C) 2016 - 2025 Skymatic GmbH'
+        --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
+        --java-options "--sun-misc-unsafe-memory-access=allow"
         --java-options '-Xss5m'
         --java-options '-Xmx256m'
         --java-options '-Dfile.encoding='utf-8''
@@ -161,14 +162,14 @@ modules:
         dest-filename: openjfx.zip
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/23.0.2/openjfx-23.0.2_linux-x64_bin-jmods.zip
-        sha512: e15b26e14dd14a6125a267a32cc0a24ba8fa016b403b87d0d1681235d81770caaa50a8f2097d51774d0d3ca698fe2ea7c42a9ed635b71f3ed93777ae0041618a
+        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-x64_bin-jmods.zip
+        sha512: 727b037bf1cb6d3e1aba92395709eb90893f9c33c5b91d7f091d934ac8eaed23b243d781fd4839fe59adf11aac7d7942679a318c5c695770d4751afe6cf76ab6
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/23.0.2/openjfx-23.0.2_linux-aarch64_bin-jmods.zip
-        sha512: 23ed58e3d90c6ccb536633b4686446f8f50bc87956a324482663e99387605fe7cdc1eca6748faf879fcd28c97543b3b2e048efc0b7be1d70433bdcc567248c82
+        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-aarch64_bin-jmods.zip
+        sha512: 330bc3e64f260c687ece19c60095d10bbe3ce2dea6cd67a1e48a972b71c341ffe79a750332918d567393b4f1eede89cd552c144ad39fadcb40d23d1ff9acb79a
       - type: file
         dest-filename: maven.tar.gz
         url: https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.tar.gz
