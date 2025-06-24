@@ -79,8 +79,8 @@ modules:
         PATH: /app/bin:/usr/bin
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
-        JMODS_PATH: jmods:${JAVA_HOME}/jmods
-        VERSION: 1.16.0
+        JMODS_PATH: jmods
+        VERSION: 1.17.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -111,8 +111,9 @@ modules:
         --dest .
         --name Cryptomator
         --vendor 'Skymatic GmbH'
-        --java-options '--enable-native-access=org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
         --copyright '(C) 2016 - 2025 Skymatic GmbH'
+        --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
+        --java-options "--sun-misc-unsafe-memory-access=allow"
         --java-options '-Xss5m'
         --java-options '-Xmx256m'
         --java-options '-Dfile.encoding='utf-8''
@@ -143,33 +144,33 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: afd0a54a9735f56f24c6d108b3e48fa5f2ce75cd3034564d589705f7c5b68f37087dd2d588633e660f24806469e92884fc324a494defcf125eabbc35e6e39db0 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.16.0.tar.gz
+        sha512: 58b4e3136777df5e6b2187d103c25a5aba0525e91fb25309f736d2ead44bab9c53b7d8a7bd60fe853b5193aebb00e71372616e32327832e8e82a768bbe7c8212 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.17.0.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-jdk_x64_linux_hotspot_23.0.2_7.tar.gz
-        sha512: cd3f0f1f5ae97286895d1c243a86193fe31791652bd780d5bfc6062b4421f7111da9fe6ae91071a06aa928626ab710693b3cf6b12a6c9b5f1f9e2148b67c9540
+        url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz
+        sha512: c321f009548ff5079e3faeff29bfb7becf39d62fa1469e60b48dbb81067713888cef6236353113338b7d2b581c2ce64ecbc0f67146b299f31ba6c24cd65cd2d7
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-jdk_aarch64_linux_hotspot_23.0.2_7.tar.gz
-        sha512: 70e0a4f040689587da8757821d1ada3b5dc6ac407a336c39f458f91c960f3cb744bb05eb7a6d71885d5d014034c1f5fd5c56c5f2bdd8497e4d22ad353c95afc7
+        url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz
+        sha512: 2dcbb59b295ec72dfbc082d0bb70c92dc227bc50ebe45187d9503094e3ced15197fad232c3bd2d57312f1ba040c9a0ce3c4398e4c014cfedbb5eee366b594a79
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/23.0.2/openjfx-23.0.2_linux-x64_bin-jmods.zip
-        sha512: e15b26e14dd14a6125a267a32cc0a24ba8fa016b403b87d0d1681235d81770caaa50a8f2097d51774d0d3ca698fe2ea7c42a9ed635b71f3ed93777ae0041618a
+        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-x64_bin-jmods.zip
+        sha512: 727b037bf1cb6d3e1aba92395709eb90893f9c33c5b91d7f091d934ac8eaed23b243d781fd4839fe59adf11aac7d7942679a318c5c695770d4751afe6cf76ab6
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/23.0.2/openjfx-23.0.2_linux-aarch64_bin-jmods.zip
-        sha512: 23ed58e3d90c6ccb536633b4686446f8f50bc87956a324482663e99387605fe7cdc1eca6748faf879fcd28c97543b3b2e048efc0b7be1d70433bdcc567248c82
+        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-aarch64_bin-jmods.zip
+        sha512: 330bc3e64f260c687ece19c60095d10bbe3ce2dea6cd67a1e48a972b71c341ffe79a750332918d567393b4f1eede89cd552c144ad39fadcb40d23d1ff9acb79a
       - type: file
         dest-filename: maven.tar.gz
-        url: https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
-        sha512: a555254d6b53d267965a3404ecb14e53c3827c09c3b94b5678835887ab404556bfaf78dcfe03ba76fa2508649dca8531c74bca4d5846513522404d48e8c4ac8b
+        url: https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.tar.gz
+        sha512: 4ef617e421695192a3e9a53b3530d803baf31f4269b26f9ab6863452d833da5530a4d04ed08c36490ad0f141b55304bceed58dbf44821153d94ae9abf34d0e1b
