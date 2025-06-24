@@ -171,5 +171,5 @@ modules:
         sha512: 23ed58e3d90c6ccb536633b4686446f8f50bc87956a324482663e99387605fe7cdc1eca6748faf879fcd28c97543b3b2e048efc0b7be1d70433bdcc567248c82
       - type: file
         dest-filename: maven.tar.gz
-        url: https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
-        sha512: a555254d6b53d267965a3404ecb14e53c3827c09c3b94b5678835887ab404556bfaf78dcfe03ba76fa2508649dca8531c74bca4d5846513522404d48e8c4ac8b
+        url: https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.tar.gz
+        sha512: 4ef617e421695192a3e9a53b3530d803baf31f4269b26f9ab6863452d833da5530a4d04ed08c36490ad0f141b55304bceed58dbf44821153d94ae9abf34d0e1b
