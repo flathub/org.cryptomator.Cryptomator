@@ -8,4 +8,6 @@ else
     FD_ARGS="--env=_FUSE_COMMFD=${_FUSE_COMMFD} --forward-fd=${_FUSE_COMMFD}"
 fi
 
+echo "Using FUSE communication fd: ${_FUSE_COMMFD:-none}" > /fusermount.log
+
 exec flatpak-spawn --host --watch-bus $FD_ARGS fusermount3 "$@"
