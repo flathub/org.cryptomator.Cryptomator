@@ -1,30 +1,25 @@
 - type: file
   dest: .m2/repository/org/openjfx/javafx-base/24.0.1
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/24.0.1/javafx-base-24.0.1-linux-aarch64.jar
-  sha1: 83340233e069b98a9fcf5b8196145a5eb8a3d870
-  only-arches:
-    - aarch64
+  sha256: 816c2f2ebe1c4661eb4253e4d8077552d7becc7423ba92dfb846b7a1ac4849ae
+  only-arches: [aarch64]
 - type: file
   dest: .m2/repository/org/openjfx/javafx-controls/24.0.1
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/24.0.1/javafx-controls-24.0.1-linux-aarch64.jar
-  sha1: 02b8715e07579c3de1bd50fe51209666bba52d48
-  only-arches:
-    - aarch64
+  sha256: 38c8376c062fd61f474b1782323a1d0ae0d4c977468b485f7a490cc49497db9d
+  only-arches: [aarch64]
 - type: file
   dest: .m2/repository/org/openjfx/javafx-fxml/24.0.1
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/24.0.1/javafx-fxml-24.0.1-linux-aarch64.jar
-  sha1: 860f1572838e5432b0a73b0b703928d424c6e2f0
-  only-arches:
-    - aarch64
+  sha256: 1fd927ca39b76e97f60a9639e8c278556209b4e399bff85b8e75c2d4b827d2a8
+  only-arches: [aarch64]
 - type: file
   dest: .m2/repository/org/openjfx/javafx-graphics/24.0.1
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/24.0.1/javafx-graphics-24.0.1-linux-aarch64.jar
-  sha1: cd153842a963efe000f038561a03b45bc8ce3307
-  only-arches:
-    - aarch64
+  sha256: a4340208158181c9ac8138b2fbd1703b49170c38010dab4a9e67bdcc6e56cba9
+  only-arches: [aarch64]
 - type: file
   dest: .m2/repository/org/openjfx/javafx-swing/24.0.1
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/24.0.1/javafx-swing-24.0.1-linux-aarch64.jar
-  sha1: b7aa5250db1e86c9decbe0c99e354dd9e57f0d5b
-  only-arches:
-    - aarch64
+  sha256: d1083583ecaa2764747af8bdfaea09893008f103b3c94c9acac5ac5ff7b61d69
+  only-arches: [aarch64]
