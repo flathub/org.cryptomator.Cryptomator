@@ -35,7 +35,7 @@ finish-args:
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring
   # Allow to talk to the KDE kwallet daemon
-  - --talk-name=org.kde.kwalletd5
+  - --talk-name=org.kde.kwalletd6
   # Needed to talk to the gvfs daemons over D-Bus and list mounts using the GIO APIs
   - --talk-name=org.gtk.vfs.*
   # Allow access to appindicator icons
@@ -80,7 +80,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods
-        VERSION: 1.17.1
+        VERSION: 1.18.0
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -97,7 +97,7 @@ modules:
       - $JAVA_HOME/bin/jlink
         --output runtime
         --module-path $JMODS_PATH
-        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler
+        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler,jdk.crypto.cryptoki,jdk.crypto.ec
         --no-header-files
         --no-man-pages
         --strip-debug
@@ -144,32 +144,32 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 492832021d049764af6f3ede0433c0ae45d5bce6d01a82cc0887c244720373c15cf2ae799f4a5ee4b0e730acd3d2ca99305412bf22360ee3aa0b9e856c286e88 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.17.1.tar.gz
+        sha512: 9106b7669d0f73052fc29c4b80475762d0a998762a3563786248827a84cb3405ad4a656a59a073cd7eeb1ffe8b69f1f1d229cd8684506d2cfd6c5c6ab53d0651 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.18.0.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz
-        sha512: c321f009548ff5079e3faeff29bfb7becf39d62fa1469e60b48dbb81067713888cef6236353113338b7d2b581c2ce64ecbc0f67146b299f31ba6c24cd65cd2d7
+        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_linux_hotspot_25_36.tar.gz
+        sha512: 787af8846a3af90f0e9a3c1ad91c9b0c9ed6064d7c19cc0fc325516bde4e09a9f25d664af03fdb156b679046cc221e7755fead33087bbcca5fd50d3b393664f7
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz
-        sha512: 2dcbb59b295ec72dfbc082d0bb70c92dc227bc50ebe45187d9503094e3ced15197fad232c3bd2d57312f1ba040c9a0ce3c4398e4c014cfedbb5eee366b594a79
+        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_linux_hotspot_25_36.tar.gz
+        sha512: 787af8846a3af90f0e9a3c1ad91c9b0c9ed6064d7c19cc0fc325516bde4e09a9f25d664af03fdb156b679046cc221e7755fead33087bbcca5fd50d3b393664f7
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-x64_bin-jmods.zip
+        url: https://download2.gluonhq.com/openjfx/25/openjfx-25_linux-x64_bin-jmods.zip
         sha512: 727b037bf1cb6d3e1aba92395709eb90893f9c33c5b91d7f091d934ac8eaed23b243d781fd4839fe59adf11aac7d7942679a318c5c695770d4751afe6cf76ab6
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-aarch64_bin-jmods.zip
-        sha512: 330bc3e64f260c687ece19c60095d10bbe3ce2dea6cd67a1e48a972b71c341ffe79a750332918d567393b4f1eede89cd552c144ad39fadcb40d23d1ff9acb79a
+        url: https://download2.gluonhq.com/openjfx/25/openjfx-25_linux-aarch64_bin-jmods.zip
+        sha512: a708b818d59e9c29f1cf55ca8e5d1578928786d80d917b0ab9919d52d47106a6ea9c7d41548f9cc69cc4dfd4cba8a2b3049621b4e23f80161cb37484c294cd55
       - type: file
         dest-filename: maven.tar.gz
         url: https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.tar.gz
