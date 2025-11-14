@@ -1,25 +1,53 @@
+# For JFX 25.0.1 exists no aarch64 maven release.
+# Since the jars are only used for building the application and the actual binding happens with the jmods, we use the x64 versions for now
+#
+# - type: file
+#   dest: .m2/repository/org/openjfx/javafx-base/25.0.1
+#   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/25.0.1/javafx-base-25.0.1-linux-aarch64.jar
+#   sha256: 
+#   only-arches: [aarch64]
+# - type: file
+#   dest: .m2/repository/org/openjfx/javafx-controls/25.0.1
+#   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/25.0.1/javafx-controls-25.0.1-linux-aarch64.jar
+#   sha256: 
+#   only-arches: [aarch64]
+# - type: file
+#   dest: .m2/repository/org/openjfx/javafx-fxml/25.0.1
+#   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/25.0.1/javafx-fxml-25.0.1-linux-aarch64.jar
+#   sha256: 
+#   only-arches: [aarch64]
+# - type: file
+#   dest: .m2/repository/org/openjfx/javafx-graphics/25.0.1
+#   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/25.0.1/javafx-graphics-25.0.1-linux-aarch64.jar
+#   sha256: 
+#   only-arches: [aarch64]
+# - type: file
+#   dest: .m2/repository/org/openjfx/javafx-swing/25.0.1
+#   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/25.0.1/javafx-swing-25.0.1-linux-aarch64.jar
+#   sha256: 
+#   only-arches: [aarch64]
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-base/24.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/24.0.1/javafx-base-24.0.1-linux-aarch64.jar
-  sha256: 816c2f2ebe1c4661eb4253e4d8077552d7becc7423ba92dfb846b7a1ac4849ae
+  dest: .m2/repository/org/openjfx/javafx-base/25.0.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/25.0.1/javafx-base-25.0.1-linux.jar
+  sha256: 2c7f961fb8d275fa6677cca3de39d70446062c4441a1da4d5c07909a1ddc932a
   only-arches: [aarch64]
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-controls/24.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/24.0.1/javafx-controls-24.0.1-linux-aarch64.jar
-  sha256: 38c8376c062fd61f474b1782323a1d0ae0d4c977468b485f7a490cc49497db9d
+  dest: .m2/repository/org/openjfx/javafx-controls/25.0.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/25.0.1/javafx-controls-25.0.1-linux.jar
+  sha256: dafec596f834838274a2a03d8199ef2a05fa0e3f5ff1baad6a7d312d6f39641f
   only-arches: [aarch64]
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-fxml/24.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/24.0.1/javafx-fxml-24.0.1-linux-aarch64.jar
-  sha256: 1fd927ca39b76e97f60a9639e8c278556209b4e399bff85b8e75c2d4b827d2a8
+  dest: .m2/repository/org/openjfx/javafx-fxml/25.0.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/25.0.1/javafx-fxml-25.0.1-linux.jar
+  sha256: 81332a5c8918583f2c0b69850ec406328ea6944fa71174081268ba7bf01913ff
   only-arches: [aarch64]
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-graphics/24.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/24.0.1/javafx-graphics-24.0.1-linux-aarch64.jar
-  sha256: a4340208158181c9ac8138b2fbd1703b49170c38010dab4a9e67bdcc6e56cba9
+  dest: .m2/repository/org/openjfx/javafx-graphics/25.0.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/25.0.1/javafx-graphics-25.0.1-linux.jar
+  sha256: f78baaf33fc44c7dcaadea64b306e1344e18a752a6aae1754d07097b86d4c8f6
   only-arches: [aarch64]
 - type: file
-  dest: .m2/repository/org/openjfx/javafx-swing/24.0.1
-  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/24.0.1/javafx-swing-24.0.1-linux-aarch64.jar
-  sha256: d1083583ecaa2764747af8bdfaea09893008f103b3c94c9acac5ac5ff7b61d69
+  dest: .m2/repository/org/openjfx/javafx-swing/25.0.1
+  url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/25.0.1/javafx-swing-25.0.1-linux.jar
+  sha256: f9b9cdbc6078cc79a7fe17282dddf329fd7ea7164268ca9121306a1a324ffb37
   only-arches: [aarch64]
