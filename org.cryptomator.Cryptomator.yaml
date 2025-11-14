@@ -162,14 +162,14 @@ modules:
         dest-filename: openjfx.zip
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-x64_bin-jmods.zip
-        sha512: 727b037bf1cb6d3e1aba92395709eb90893f9c33c5b91d7f091d934ac8eaed23b243d781fd4839fe59adf11aac7d7942679a318c5c695770d4751afe6cf76ab6
+        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-x64_bin-jmods.zip
+        sha512: e87d4ab10a50d9ad7a5f99bf7d0118e6e3c788be1c2f0beceb88967fe289e9b8d3647c372681fb11879756df77d2ffce259d0fa7687fb2cad856dea9c51eac0c
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-aarch64_bin-jmods.zip
-        sha512: 330bc3e64f260c687ece19c60095d10bbe3ce2dea6cd67a1e48a972b71c341ffe79a750332918d567393b4f1eede89cd552c144ad39fadcb40d23d1ff9acb79a
+        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-aarch64_bin-jmods.zip
+        sha512: 57003b3f02165ef80f2cd1fba16ab0364552debcd4b40f7e868856aedd27a61b2e951110a8a6e051b41a9366d315080bad074a18048babab038949af1b87be08
       - type: file
         dest-filename: maven.tar.gz
         url: https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.tar.gz
