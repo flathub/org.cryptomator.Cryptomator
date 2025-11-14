@@ -59,8 +59,8 @@ modules:
       - -Dudevrulesdir=/tmp/
     sources:
       - type: archive
-        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
-        sha256: f797055d9296b275e981f5f62d4e32e089614fc253d1ef2985851025b8a0ce87
+        url: https://github.com/libfuse/libfuse/releases/download/fuse-3.17.4/fuse-3.17.4.tar.gz
+        sha256: df9e40ae927b73dc702d0bce7925c0c618af47ad0b13204fbf2be66e54d8528b
         x-checker-data:
           type: anitya
           project-id: 861
@@ -87,7 +87,8 @@ modules:
       # Setup Java
       - tar xvfz jdk.tar.gz --transform 's!^[^/]*!jdk!'
       - mkdir jmods
-      - unzip -j openjfx.zip \*/javafx.base.jmod \*/javafx.controls.jmod \*/javafx.fxml.jmod \*/javafx.graphics.jmod -d jmods
+      - unzip -j openjfx.zip \*/javafx.base.jmod \*/javafx.controls.jmod \*/javafx.fxml.jmod
+        \*/javafx.graphics.jmod -d jmods
       # Setup Maven
       - mkdir maven
       - tar xf maven.tar.gz --strip-components=1 --exclude=jansi-native --directory=maven
@@ -95,50 +96,35 @@ modules:
       - maven/bin/mvn clean package -DskipTests -Plinux -Djavafx.platform=linux
       - cp target/cryptomator-*.jar target/mods
       - cd target
-      - $JAVA_HOME/bin/jlink
-        --output runtime
-        --module-path $JMODS_PATH
-        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.crypto.ec,jdk.crypto.cryptoki,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler
-        --no-header-files
-        --no-man-pages
-        --strip-debug
-        --compress=zip-0
-      - $JAVA_HOME/bin/jpackage
-        --type app-image
-        --runtime-image runtime
-        --input target/libs
-        --module-path target/mods
-        --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
-        --dest .
-        --name Cryptomator
-        --vendor 'Skymatic GmbH'
-        --copyright '(C) 2016 - 2025 Skymatic GmbH'
-        --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
-        --java-options "--sun-misc-unsafe-memory-access=allow"
-        --java-options '-Xss5m'
-        --java-options '-Xmx256m'
-        --java-options '-Dfile.encoding='utf-8''
-        --java-options '-Djava.net.useSystemProxies=true'
-        --java-options "-Dcryptomator.appVersion='${VERSION}'"
-        --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
-        --java-options '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket''
+      - $JAVA_HOME/bin/jlink --output runtime --module-path $JMODS_PATH --add-modules
+        java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.crypto.ec,jdk.crypto.cryptoki,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler
+        --no-header-files --no-man-pages --strip-debug --compress=zip-0
+      - $JAVA_HOME/bin/jpackage --type app-image --runtime-image runtime --input target/libs
+        --module-path target/mods --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
+        --dest . --name Cryptomator --vendor 'Skymatic GmbH' --copyright '(C) 2016
+        - 2025 Skymatic GmbH' --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
+        --java-options "--sun-misc-unsafe-memory-access=allow" --java-options '-Xss5m'
+        --java-options '-Xmx256m' --java-options '-Dfile.encoding='utf-8'' --java-options
+        '-Djava.net.useSystemProxies=true' --java-options "-Dcryptomator.appVersion='${VERSION}'"
+        --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'" --java-options
+        '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket''
         --java-options '-Dcryptomator.logDir='@{userhome}/.local/share/Cryptomator/logs''
         --java-options '-Dcryptomator.mountPointsDir='@{userhome}/.local/share/Cryptomator/mnt''
         --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins''
         --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12''
         --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
-        --java-options '-Dcryptomator.showTrayIcon=true'
-        --java-options '-Dcryptomator.disableUpdateCheck=true'
+        --java-options '-Dcryptomator.showTrayIcon=true' --java-options '-Dcryptomator.disableUpdateCheck=true'
         --java-options '-Dcryptomator.networking.truststore.p12Path='/run/host/etc/cryptomator/certs.p12''
-        --app-version "${VERSION}.${REVISION_NO}"
-        --verbose
+        --app-version "${VERSION}.${REVISION_NO}" --verbose
       - cp -R Cryptomator /app/
       - ln -s /app/Cryptomator/bin/Cryptomator /app/bin/cryptomator
       - cp -R /app/lib/* /app/Cryptomator/lib/app/
       - install -D -m0644 -t /app/share/applications/ dist/linux/common/org.cryptomator.Cryptomator.desktop
       - install -D -m0644 -t /app/share/icons/hicolor/scalable/apps/ dist/linux/common/org.cryptomator.Cryptomator.svg
-      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-symbolic.svg
-      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
+      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray.svg
+        /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-symbolic.svg
+      - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg
+        /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
     sources:
       - maven-dependencies.yaml
