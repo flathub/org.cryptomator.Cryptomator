@@ -81,7 +81,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods
-        VERSION: 1.18.0
+        VERSION: 1.19.0-alpha2
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -145,20 +145,20 @@ modules:
       - maven-dependencies-x86_64.yaml
       - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: 9106b7669d0f73052fc29c4b80475762d0a998762a3563786248827a84cb3405ad4a656a59a073cd7eeb1ffe8b69f1f1d229cd8684506d2cfd6c5c6ab53d0651 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.18.0.tar.gz
+        sha512: 4e19ab9ed6b4e42120b7790ffc63a778a255d60ef6f29d8981f8c6a85da97cfe42eca3a121a84443b3230f9f9ca0a02c95513cf17a2bce51f210dd6db543b6ad #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.19.0-alpha2.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz
-        sha512: c321f009548ff5079e3faeff29bfb7becf39d62fa1469e60b48dbb81067713888cef6236353113338b7d2b581c2ce64ecbc0f67146b299f31ba6c24cd65cd2d7
+        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_linux_hotspot_25_36.tar.gz
+        sha512: 83254b8af4fb9dde568c50716adc6070bf12f2a612d2cdb2c4b1edeabb8b0b5c2b87fadd47532a01f9d16df069e5bca985a4b24bcfd36e34ffa2f5b0c77c9637
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz
-        sha512: 2dcbb59b295ec72dfbc082d0bb70c92dc227bc50ebe45187d9503094e3ced15197fad232c3bd2d57312f1ba040c9a0ce3c4398e4c014cfedbb5eee366b594a79
+        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_linux_hotspot_25_36.tar.gz
+        sha512: 787af8846a3af90f0e9a3c1ad91c9b0c9ed6064d7c19cc0fc325516bde4e09a9f25d664af03fdb156b679046cc221e7755fead33087bbcca5fd50d3b393664f7
       - type: file
         dest-filename: openjfx.zip
         only-arches:
