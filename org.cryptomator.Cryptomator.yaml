@@ -65,7 +65,7 @@ modules:
           type: anitya
           project-id: 861
           url-template: https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz
-          versions: {<: '4.0'}
+          versions: {<: '3.17.0'}
   - name: host-command-wrapper
     buildsystem: simple
     build-commands:
