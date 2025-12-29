@@ -5,10 +5,24 @@
 
 set -e
 
+if ! command -v yq >/dev/null 2>&1
+then
+    echo "Command 'yq' could not be found."
+    exit 1
+fi
+if ! command -v <the_command> >/dev/null 2>&1
+then
+    echo "Command 'natsort' could not be found"
+    exit 1
+fi
+
 # clean up previous builds
 rm -rf .flatpak-builder/ build/ repo
 
 # patch the yml file
+## copy the build file to a temporary location
+BACKUP_FILE="org.cryptomator.Cryptomator.yaml.tmp"
+cp org.cryptomator.Cryptomator.yaml $BACKUP_FILE
 ## This allows the Flatpak to access the network, which is required to update maven dependencies
 yq '(.modules[] | select(.name == "cryptomator") | .build-options.build-args) = ["--share=network"]' -i org.cryptomator.Cryptomator.yaml
 ## Remove the maven dependency files from the sources list
@@ -41,4 +55,4 @@ echo "WARNING: JavaFX AARCH64 dependencies are not updated automatically."
 echo "Please update them manually."
 
 # revert the yml file to its original state
-git checkout org.cryptomator.Cryptomator.yaml
+mv $BACKUP_FILE org.cryptomator.Cryptomator.yaml
