@@ -158,7 +158,7 @@ modules:
         only-arches:
           - aarch64
         url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.2_10.tar.gz
-        sha512: f1d3ccec3e1f1bed9d632f14b9223709d6e5c2e0d922125d068870dd3016492a2ca8f08924d4a9d0dc5eb2159fa09efee366a748fd0093475baf29e5c70c781a - aarch64
+        sha512: f1d3ccec3e1f1bed9d632f14b9223709d6e5c2e0d922125d068870dd3016492a2ca8f08924d4a9d0dc5eb2159fa09efee366a748fd0093475baf29e5c70c781a
       - type: file
         dest-filename: openjfx.zip
         only-arches:
