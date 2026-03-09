@@ -111,7 +111,7 @@ modules:
         --java-options "-Dcryptomator.appVersion='${VERSION}'"
         --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
         --java-options '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket''
-        --java-options '-Dcryptomator.adminConfigPath='/etc/cryptomator/config.properties''
+        --java-options '-Dcryptomator.adminConfigPath='/run/host/etc/cryptomator/config.properties''
         --java-options '-Dcryptomator.logDir='@{userhome}/.local/share/Cryptomator/logs''
         --java-options '-Dcryptomator.mountPointsDir='@{userhome}/.local/share/Cryptomator/mnt''
         --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins''
