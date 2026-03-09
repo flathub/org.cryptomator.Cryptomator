@@ -65,7 +65,7 @@ modules:
           type: anitya
           project-id: 861
           url-template: https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz
-          versions: {<: 3.17.0}
+          versions: {<: '3.17.0'}
   - name: host-command-wrapper
     buildsystem: simple
     build-commands:
@@ -95,7 +95,8 @@ modules:
       - maven/bin/mvn clean package -DskipTests -Plinux -Djavafx.platform=linux
       - cp target/cryptomator-*.jar target/mods
       - cd target
-      - $JAVA_HOME/bin/jlink --output runtime
+      - $JAVA_HOME/bin/jlink
+        --output runtime
         --module-path $JMODS_PATH
         --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.crypto.ec,jdk.crypto.cryptoki,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler
         --no-header-files
