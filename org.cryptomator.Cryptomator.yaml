@@ -47,7 +47,7 @@ cleanup:
   - /include
   - /lib/pkgconfig
 modules:
-  - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
+  - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
   - name: libfuse
     buildsystem: meson
     config-opts:
