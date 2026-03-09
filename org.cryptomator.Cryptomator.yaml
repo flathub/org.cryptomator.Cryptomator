@@ -100,11 +100,15 @@ modules:
         java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.crypto.ec,jdk.crypto.cryptoki,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler
         --no-header-files --no-man-pages --strip-debug --compress=zip-0
       - $JAVA_HOME/bin/jpackage --type app-image --runtime-image runtime --input target/libs
-        --module-path target/mods --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
-        --dest . --name Cryptomator --vendor 'Skymatic GmbH'
+        --module-path target/mods
+        --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
+        --dest .
+        --name Cryptomator
+        --vendor 'Skymatic GmbH'
         --copyright '(C) 2016 - 2025 Skymatic GmbH'
         --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
-        --java-options "--sun-misc-unsafe-memory-access=allow" --java-options '-Xss5m'
+        --java-options "--sun-misc-unsafe-memory-access=allow"
+        --java-options '-Xss5m'
         --java-options '-Xmx256m'
         --java-options '-Dfile.encoding='utf-8''
         --java-options '-Djava.net.useSystemProxies=true'
@@ -120,7 +124,8 @@ modules:
         --java-options '-Dcryptomator.showTrayIcon=true'
         --java-options '-Dcryptomator.updateMechanism=org.cryptomator.linux.update.FlatpakUpdater'
         --java-options '-Dcryptomator.networking.truststore.p12Path='/run/host/etc/cryptomator/certs.p12''
-        --app-version "${VERSION}.${REVISION_NO}" --verbose
+        --app-version "${VERSION}.${REVISION_NO}"
+        --verbose
       - cp -R Cryptomator /app/
       - ln -s /app/Cryptomator/bin/Cryptomator /app/bin/cryptomator
       - cp -R /app/lib/* /app/Cryptomator/lib/app/
