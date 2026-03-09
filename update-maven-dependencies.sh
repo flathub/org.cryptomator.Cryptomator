@@ -10,7 +10,7 @@ then
     echo "Command 'yq' could not be found."
     exit 1
 fi
-if ! command -v <the_command> >/dev/null 2>&1
+if ! command -v natsort >/dev/null 2>&1
 then
     echo "Command 'natsort' could not be found"
     exit 1
