@@ -138,26 +138,26 @@ modules:
         dest-filename: jdk.tar.gz
         only-arches:
           - x86_64
-        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_linux_hotspot_25_36.tar.gz
-        sha512: 83254b8af4fb9dde568c50716adc6070bf12f2a612d2cdb2c4b1edeabb8b0b5c2b87fadd47532a01f9d16df069e5bca985a4b24bcfd36e34ffa2f5b0c77c9637
+        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_linux_hotspot_25.0.2_10.tar.gz
+        sha512: 29043fde119a031c2ca8d57aed445fedd9e7f74608fcdc7a809076ba84cfd1c31f08de2ecccf352e159fdcd1cae172395ed46363007552ff242057826c81ab3a
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
           - aarch64
-        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_linux_hotspot_25_36.tar.gz
-        sha512: 787af8846a3af90f0e9a3c1ad91c9b0c9ed6064d7c19cc0fc325516bde4e09a9f25d664af03fdb156b679046cc221e7755fead33087bbcca5fd50d3b393664f7
+        url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.2_10.tar.gz
+        sha512: f1d3ccec3e1f1bed9d632f14b9223709d6e5c2e0d922125d068870dd3016492a2ca8f08924d4a9d0dc5eb2159fa09efee366a748fd0093475baf29e5c70c781a - aarch64
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - x86_64
-        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-x64_bin-jmods.zip
-        sha512: e87d4ab10a50d9ad7a5f99bf7d0118e6e3c788be1c2f0beceb88967fe289e9b8d3647c372681fb11879756df77d2ffce259d0fa7687fb2cad856dea9c51eac0c
+        url: https://download2.gluonhq.com/openjfx/25.0.2/openjfx-25.0.2_linux-x64_bin-jmods.zip
+        sha512: 21f550217101c513f9eb1d7947eba30cb79618238e6539ce770e54e84b01574cdaeba40af602391145f163dd8e43e3794395467413152f13ffffeff948b0ca1b
       - type: file
         dest-filename: openjfx.zip
         only-arches:
           - aarch64
-        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-aarch64_bin-jmods.zip
-        sha512: 57003b3f02165ef80f2cd1fba16ab0364552debcd4b40f7e868856aedd27a61b2e951110a8a6e051b41a9366d315080bad074a18048babab038949af1b87be08
+        url: https://download2.gluonhq.com/openjfx/25.0.2/openjfx-25.0.2_linux-aarch64_bin-jmods.zip
+        sha512: a9268409b3803e386490bf1319d0f0a14173cebe862c12254cd51b430ee0a297437d9e38d5ebeae0da8899be898b312b103330d09dcfd3e63c1e7d15f2f14311
       - type: file
         dest-filename: maven.tar.gz
         url: https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.9.13/apache-maven-3.9.13-bin.tar.gz
