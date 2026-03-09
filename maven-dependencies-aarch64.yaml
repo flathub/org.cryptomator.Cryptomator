@@ -6,7 +6,7 @@
 - type: file
   dest: .m2/repository/org/openjfx/javafx-controls/25.0.2
   url: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/25.0.2/javafx-controls-25.0.2-linux-aarch64.jar
-  sha2526: 490c37ef1a6d9c46fc72e8445901c577dd604bde5b0aa0b9b2957b6508e57b19
+  sha256: 490c37ef1a6d9c46fc72e8445901c577dd604bde5b0aa0b9b2957b6508e57b19
   only-arches: [aarch64]
 - type: file
   dest: .m2/repository/org/openjfx/javafx-fxml/25.0.2
