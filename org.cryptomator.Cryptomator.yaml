@@ -131,6 +131,7 @@ modules:
         --java-options '-Dcryptomator.showTrayIcon=true'
         --java-options '-Dcryptomator.updateMechanism=org.cryptomator.linux.update.FlatpakUpdater'
         --java-options '-Dcryptomator.networking.truststore.p12Path='/run/host/etc/cryptomator/certs.p12''
+        --java-options '-Dcryptomator.hub.enableTrustOnFirstUse=true'
         --app-version "${VERSION}.${REVISION_NO}"
         --verbose
       - cp -R Cryptomator /app/
