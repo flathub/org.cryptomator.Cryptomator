@@ -82,7 +82,7 @@ modules:
         JAVA_HOME: jdk
         JMODS_PATH: jmods
         VERSION: 1.19.2
-        REVISION_NO: '1'
+        REVISION_NO: '2'
     build-commands:
       # Setup Java
       - tar xvfz jdk.tar.gz --transform 's!^[^/]*!jdk!'
@@ -92,48 +92,11 @@ modules:
       - mkdir maven
       - tar xf maven.tar.gz --strip-components=1 --exclude=jansi-native --directory=maven
       # Build project
-      - maven/bin/mvn clean package -DskipTests -Plinux -Djavafx.platform=linux
+      - maven/bin/mvn clean package -DskipTests -P"linux-$(uname -m)"
       - cp target/cryptomator-*.jar target/mods
       - cd target
-      - $JAVA_HOME/bin/jlink
-        --output runtime
-        --module-path $JMODS_PATH
-        --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.crypto.ec,jdk.crypto.cryptoki,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler
-        --no-header-files
-        --no-man-pages
-        --strip-debug
-        --compress=zip-0
-      - $JAVA_HOME/bin/jpackage
-        --type app-image
-        --runtime-image runtime
-        --input target/libs
-        --module-path target/mods
-        --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator
-        --dest .
-        --name Cryptomator
-        --vendor 'Skymatic GmbH'
-        --copyright '(C) 2016 - 2025 Skymatic GmbH'
-        --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator'
-        --java-options "--sun-misc-unsafe-memory-access=allow"
-        --java-options '-Xss5m'
-        --java-options '-Xmx256m'
-        --java-options '-Dfile.encoding='utf-8''
-        --java-options '-Djava.net.useSystemProxies=true'
-        --java-options "-Dcryptomator.appVersion='${VERSION}'"
-        --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'"
-        --java-options '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket''
-        --java-options '-Dcryptomator.adminConfigPath='/run/host/etc/cryptomator/config.properties''
-        --java-options '-Dcryptomator.logDir='@{userhome}/.local/share/Cryptomator/logs''
-        --java-options '-Dcryptomator.mountPointsDir='@{userhome}/.local/share/Cryptomator/mnt''
-        --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins''
-        --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12''
-        --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json''
-        --java-options '-Dcryptomator.showTrayIcon=true'
-        --java-options '-Dcryptomator.updateMechanism=org.cryptomator.linux.update.FlatpakUpdater'
-        --java-options '-Dcryptomator.networking.truststore.p12Path='/run/host/etc/cryptomator/certs.p12''
-        --java-options '-Dcryptomator.hub.enableTrustOnFirstUse=true'
-        --app-version "${VERSION}.${REVISION_NO}"
-        --verbose
+      - $JAVA_HOME/bin/jlink --output runtime --module-path $JMODS_PATH --add-modules java.base,java.desktop,java.instrument,java.logging,java.naming,java.net.http,java.scripting,java.sql,java.xml,javafx.base,javafx.graphics,javafx.controls,javafx.fxml,jdk.crypto.ec,jdk.crypto.cryptoki,jdk.unsupported,jdk.security.auth,jdk.accessibility,jdk.management.jfr,jdk.net,java.compiler --no-header-files --no-man-pages --strip-debug --compress=zip-0
+      - $JAVA_HOME/bin/jpackage --type app-image --runtime-image runtime --input target/libs --module-path target/mods --module org.cryptomator.desktop/org.cryptomator.launcher.Cryptomator --dest . --name Cryptomator --vendor 'Skymatic GmbH' --copyright '(C) 2016 - 2025 Skymatic GmbH' --java-options '--enable-native-access=javafx.graphics,org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator' --java-options "--sun-misc-unsafe-memory-access=allow" --java-options '-Xss5m' --java-options '-Xmx256m' --java-options '-Dfile.encoding='utf-8'' --java-options '-Djava.net.useSystemProxies=true' --java-options "-Dcryptomator.appVersion='${VERSION}'" --java-options "-Dcryptomator.buildNumber='flatpak-${REVISION_NO}'" --java-options '-Dcryptomator.ipcSocketPath='@{userhome}/.config/Cryptomator/ipc.socket'' --java-options '-Dcryptomator.adminConfigPath='/run/host/etc/cryptomator/config.properties'' --java-options '-Dcryptomator.logDir='@{userhome}/.local/share/Cryptomator/logs'' --java-options '-Dcryptomator.mountPointsDir='@{userhome}/.local/share/Cryptomator/mnt'' --java-options '-Dcryptomator.pluginDir='@{userhome}/.local/share/Cryptomator/plugins'' --java-options '-Dcryptomator.p12Path='@{userhome}/.config/Cryptomator/key.p12'' --java-options '-Dcryptomator.settingsPath='@{userhome}/.config/Cryptomator/settings.json:~/.Cryptomator/settings.json'' --java-options '-Dcryptomator.showTrayIcon=true' --java-options '-Dcryptomator.updateMechanism=org.cryptomator.linux.update.FlatpakUpdater' --java-options '-Dcryptomator.networking.truststore.p12Path='/run/host/etc/cryptomator/certs.p12'' --java-options '-Dcryptomator.hub.enableTrustOnFirstUse=true' --app-version "${VERSION}.${REVISION_NO}" --verbose
       - cp -R Cryptomator /app/
       - ln -s /app/Cryptomator/bin/Cryptomator /app/bin/cryptomator
       - cp -R /app/lib/* /app/Cryptomator/lib/app/
@@ -143,11 +106,8 @@ modules:
       - install -D -m0644 -T dist/linux/common/org.cryptomator.Cryptomator.tray-unlocked.svg /app/share/icons/hicolor/symbolic/apps/org.cryptomator.Cryptomator.tray-unlocked-symbolic.svg
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
     sources:
-      - maven-dependencies.yaml
-      - maven-dependencies-x86_64.yaml
-      - maven-dependencies-aarch64.yaml
       - type: archive
-        sha512: d70c3e19545f827bcf281db4bbb1ec004121734b7cea61c42ac2135b1f4f7574867c83036fd0945184142d8b48636f6d06d0fe1a6fd78367c71ac2ab1e1e2bb9 #CRYPTOMATOR - COMMENT REQUIRED FOR AUTOMATION
+        sha512: d70c3e19545f827bcf281db4bbb1ec004121734b7cea61c42ac2135b1f4f7574867c83036fd0945184142d8b48636f6d06d0fe1a6fd78367c71ac2ab1e1e2bb9
         url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.19.2.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
@@ -183,3 +143,6 @@ modules:
           stable-only: true
           url-template: https://repo1.maven.org/maven2/org/apache/maven/apache-maven/$version/apache-maven-$version-bin.tar.gz
           versions: {<: '4.0'}
+      - maven-dependencies.yaml
+      - javafx-maven-dependencies-x86_64.yaml
+      - javafx-maven-dependencies-aarch64.yaml
