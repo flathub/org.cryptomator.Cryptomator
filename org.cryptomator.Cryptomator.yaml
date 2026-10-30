@@ -81,7 +81,7 @@ modules:
         MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
         JAVA_HOME: jdk
         JMODS_PATH: jmods
-        VERSION: 1.19.5
+        VERSION: 1.19.6
         REVISION_NO: '1'
     build-commands:
       # Setup Java
@@ -108,8 +108,8 @@ modules:
       - install -D -m0644 -t /app/share/metainfo/ dist/linux/common/org.cryptomator.Cryptomator.metainfo.xml
     sources:
       - type: archive
-        sha512: 120b9b2726a7deb9c828a89b0f8336b6b3f157caf61748d54ef2ca4bcc04517cd54c4e45185ba33b2817171f591d07f477826b6c2855e71a63524b642509331c
-        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.19.5.tar.gz
+        sha512: 75a86ef8e0e4a2c6f9c243198b029e8220b98b791e3cbfa8e2995fb1e14a7850225a57705b3c0f1106515593d2b89d186c2cc24c90dab939c6df466ed306a603
+        url: https://github.com/cryptomator/cryptomator/archive/refs/tags/1.19.6.tar.gz
       - type: file
         dest-filename: jdk.tar.gz
         only-arches:
