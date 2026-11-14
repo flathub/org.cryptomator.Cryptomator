@@ -136,8 +136,8 @@ modules:
         sha512: 33ff6812f5e7acf3c38e223a5a19ecacfa1441f4926a6d5bd9172145e038ef7d24d1c1d2e6eec7344b93dc701e0b95bc5c3b02b8db284f3767ec7cb229e21844
       - type: file
         dest-filename: maven.tar.gz
-        url: https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.9.13/apache-maven-3.9.13-bin.tar.gz
-        sha512: d9ccd44ba2991586e359c29eb86780ae8ff4ec1b88b0b8af3af074803472690cf2017782a9c4401343c62cbcd056231db9612e1e551cbd9747c21746d732c015
+        url: https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.10.0/apache-maven-3.10.0-bin.tar.gz
+        sha512: 908b1501bfb420bf7c8affb855534a9c407fd6099367bfb9f2f2dcb8e9799102bffb84518cde74c679bd76870247c6528683abdd620581bffa90f95d92d175aa
         x-checker-data:
           type: anitya
           project-id: 1894
